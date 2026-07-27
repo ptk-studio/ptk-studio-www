@@ -81,7 +81,9 @@
     padding: 0;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    /* auto-fill (not auto-fit) so a section with a single card keeps the same
+       column width as the fuller sections instead of stretching full-width */
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   }
 
   .card {
@@ -216,11 +218,12 @@
     </h1>
   </header>
 
-  <h2 class="section-label">Properties</h2>
+  <h2 class="section-label">Content Properties</h2>
 
   <!--
     ADD A PROPERTY
-    Copy one <li> block below, drop in the name, link, and copy. That's it.
+    Copy one <li> block below into the right section (content or app), drop in
+    the name, link, and copy. That's it.
 
     <li>
       <a class="card" style="--accent: #6b5bd2" href="https://example.com/" target="_blank" rel="noopener noreferrer">
@@ -265,18 +268,6 @@
     </li>
 
     <li>
-      <a class="card" style="--accent: #7b6bd6" href="https://apps.apple.com/us/app/mochi-list/id6762054793" target="_blank" rel="noopener noreferrer">
-        <div class="card-head">
-          <h3>Mochi List</h3>
-          <span class="domain">App Store &#8599;</span>
-        </div>
-        <p class="tagline">One list, five ways to play it — checklist, spin wheel, randomizer, flash cards, browser.</p>
-        <p class="blurb">An iOS app for lists that decide things for you. Themes, widgets, works offline, no account, everything stays on your device.</p>
-        <ul class="tags"><li>iOS App</li><li>Productivity</li></ul>
-      </a>
-    </li>
-
-    <li>
       <a class="card" style="--accent: #d9a520" href="https://ptk-studio.github.io/honeystorm-www/" target="_blank" rel="noopener noreferrer">
         <div class="card-head">
           <h3>HoneyStorm</h3>
@@ -285,6 +276,24 @@
         <p class="tagline">Original designs, prints, and merch.</p>
         <p class="blurb">Artwork that ends up on shirts, walls, and pages — sold across Redbubble, Creative Fabrica, and Amazon.</p>
         <ul class="tags"><li>Design</li><li>Merch</li></ul>
+      </a>
+    </li>
+
+  </ul>
+
+  <h2 class="section-label">App Properties</h2>
+
+  <ul class="properties">
+
+    <li>
+      <a class="card" style="--accent: #7b6bd6" href="https://apps.apple.com/us/app/mochi-list/id6762054793" target="_blank" rel="noopener noreferrer">
+        <div class="card-head">
+          <h3>Mochi List</h3>
+          <span class="domain">App Store &#8599;</span>
+        </div>
+        <p class="tagline">One list, five ways to play it — checklist, spin wheel, randomizer, flash cards, browser.</p>
+        <p class="blurb">An iOS app for lists that decide things for you. Themes, widgets, works offline, no account, everything stays on your device.</p>
+        <ul class="tags"><li>iOS App</li><li>Productivity</li></ul>
       </a>
     </li>
 
