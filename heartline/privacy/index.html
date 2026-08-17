@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mochi Heartline</title>
+<meta name="description" content="What Mochi Heartline collects, what it doesn't, and how to reach us. Short version: your saved messages stay on your device.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #c2536b;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Heartline</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 17 August 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> Your saved messages, your settings, and your
+    chosen look all stay on your device. We don't ask for your name or email, there are no
+    accounts, and we never sell your data or use it to advertise to you. The app sends a
+    small amount of anonymous usage data so we can tell which messages people keep.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi Heartline is made by PTK Studio. This policy covers the Mochi Heartline iOS app
+  and this page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we'll answer plainly.</p>
+
+  <h2>What stays on your device</h2>
+  <p>The things that feel personal never leave your phone:</p>
+  <ul>
+    <li>The messages you keep, and when you kept them.</li>
+    <li>Which messages you've already been shown.</li>
+    <li>Your settings — sounds, haptics, and the experience (theme) you picked.</li>
+  </ul>
+  <p>These live in the app's own storage on your device and in its home-screen widget.
+  We have no copy of them, and we cannot read them. Deleting the app deletes them.</p>
+
+  <h2>What we collect</h2>
+  <p>The app sends anonymous product-usage events to Statsig, our analytics provider, so we
+  can understand which content and features are worth making more of. Specifically:</p>
+  <ul>
+    <li><strong>A random install identifier.</strong> When you first open the app it
+    generates a random ID (a UUID) and stores it on your device. It is not your Apple ID,
+    not your advertising identifier, and not tied to anything that identifies you. It exists
+    only so that two events from the same phone can be recognised as related.</li>
+    <li><strong>Product interaction events.</strong> Which screens you open, when a message
+    is shown, saved, unsaved, or shared, and which experience or content preference you
+    choose. Events record the message's ID and tone — not anything you wrote, because the
+    app has no place to write anything.</li>
+    <li><strong>Basic technical information</strong> that comes with any internet request,
+    including your IP address, device model, and OS version. Statsig uses the IP address to
+    infer a coarse region (such as a country) and does not expose your precise location to us.</li>
+  </ul>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
+    <li>Your contacts, photos, calendar, microphone, or camera.</li>
+    <li>Precise location.</li>
+    <li>Your advertising identifier. The app does not ask to track you across other
+    companies' apps and websites, so you will never see an App Tracking Transparency prompt.</li>
+  </ul>
+
+  <h2>How your information is used</h2>
+  <p>Only to run and improve the app: to see which messages resonate, which experiences
+  people choose, and whether a feature is worth keeping. That's the whole list.</p>
+  <p>We do not sell your data. We do not share it with data brokers. We do not use it for
+  advertising, and there are no ads in the app.</p>
+
+  <h2>Who else touches it</h2>
+  <p>One provider: <a href="https://www.statsig.com/privacy" target="_blank" rel="noopener noreferrer">Statsig</a>,
+  which processes the anonymous usage events described above on our behalf. If you send us
+  feedback through the in-app form, that form is hosted by Google Forms and we receive
+  whatever you choose to type into it.</p>
+
+  <h2>How long we keep it</h2>
+  <p>Anonymous usage events are retained by our analytics provider on a rolling basis and
+  are deleted in the ordinary course. Because the events carry no identifying information,
+  we generally cannot connect them back to a person.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Stop the collection entirely</strong> by deleting the app. The install
+    identifier is stored on your device, so removing the app ends the link for good.</li>
+    <li><strong>Ask us questions, or ask us to delete something</strong>, by writing to
+    <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Depending on where you
+    live you may have rights to access, correct, or delete your personal information, or to
+    object to its processing. We honour those requests regardless of where you live. Please
+    tell us enough for us to find the data — for anonymous analytics that is often not
+    possible, and we'll say so honestly rather than pretend otherwise.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Mochi Heartline is not directed at children under 13, and we do not knowingly collect
+  personal information from them. If you believe a child has provided us with personal
+  information, contact us and we will delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change what we collect, we'll update this page and change the date at the top.
+  Material changes will also be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a></p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/heartline/support/">Heartline support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
