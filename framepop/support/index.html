@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi FramePop</title>
+<meta name="description" content="Help with Mochi FramePop: answers to the common questions, and a real person to write to.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #d1445f;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi FramePop</p>
+  <h1>Support</h1>
+  <p class="sub">FramePop turns your photos into a short video that feels made. If something
+  isn't behaving, start here — and if the answer isn't below, write to us.</p>
+
+  <h2>Common questions</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">Where do my videos go?</p>
+      <p class="a">Into FramePop, under the <strong>Videos</strong> tab, and nowhere else.
+      Turn on <strong>Settings → Save to Photos automatically</strong> and a copy also lands
+      in your photo library. You can share any video from the app at any time.</p>
+    </li>
+    <li>
+      <p class="q">Why is my photo cropped?</p>
+      <p class="a">A template fills the frame, and a wide photo has to lose something to fit a
+      tall video. Tap a photo in the strip and choose <strong>Adjust</strong> to drag and pinch
+      it into place. The <strong>Full Frame</strong> and <strong>Wide Open</strong> templates
+      show the whole picture without cropping it.</p>
+    </li>
+    <li>
+      <p class="q">Can I change what a template does?</p>
+      <p class="a">Yes. Tap the control at the top right of a template to open
+      <strong>Options</strong>: add your own words and emoji, say where they sit and which
+      photo they belong to, and change the background, transition, length and music. Or change
+      nothing — the template already decided.</p>
+    </li>
+    <li>
+      <p class="q">There's no music.</p>
+      <p class="a">Templates start silent on purpose — sound is your call, not the template's.
+      Open <strong>Options → Music</strong> and pick a track, or bring your own file. Music
+      bought from Apple Music and other stores is protected and cannot be written into an
+      exported video; that is a restriction on the file, not something FramePop can work
+      around.</p>
+    </li>
+    <li>
+      <p class="q">Is there a watermark?</p>
+      <p class="a">No. Nothing is stamped on your video, and there is no subscription.</p>
+    </li>
+    <li>
+      <p class="q">An export failed, or ran out of space.</p>
+      <p class="a">FramePop checks for room before it starts and cleans up after itself if
+      something goes wrong. If an export keeps failing, free some storage and try again — and
+      please tell us, with the name of the template you were using.</p>
+    </li>
+    <li>
+      <p class="q">What are template packs?</p>
+      <p class="a">Themed sets — Birthday Bash, Pet Star, Game On. Every pack is included at
+      the moment; add the ones you want in <strong>Settings → Template Packs</strong> and their
+      templates appear in the gallery.</p>
+    </li>
+  </ul>
+
+  <h2>Still stuck, or want to suggest something</h2>
+
+  <div class="contact">
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> — tell us what you
+    were doing, which template you were using, and what happened. We read everything.</p>
+    <p style="margin-bottom:0">You can also send it from inside the app:
+    <strong>Settings → Support → Feedback</strong>, or use
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOgArjHyqWX3d2cXYHQx10LJ9RSZwv20eIWFvCTV-L-018WA/viewform" target="_blank" rel="noopener noreferrer">this form</a>.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Your photos stay on your device — FramePop has no account and uploads nothing. The
+  details are in the <a href="/framepop/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/framepop/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/framepop/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

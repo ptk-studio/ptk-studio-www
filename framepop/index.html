@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi FramePop</title>
+<meta name="description" content="FramePop turns your photos into a short video that feels made — in about a minute, with no editing.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #d1445f;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi FramePop</p>
+  <h1>Photos in, video out — in about a minute, with no editing.</h1>
+  <p class="sub">Pick a template. Drop your photos in. The template already chose the timing,
+  the motion, the transitions and the look, so the first thing you see is already worth
+  sending.</p>
+
+  <p><a class="cta" href="https://apps.apple.com/app/id6802808531">Get it on the App Store &#8599;</a></p>
+
+  <h2>What it does</h2>
+
+  <ul class="points">
+    <li>
+      <h3>Photos that share the screen</h3>
+      <p>Most slideshow apps show your pictures one after another. FramePop also builds them
+      into one picture — a photo booth strip, a passport-style grid, a pile of Polaroids, a
+      fanned hand of cards. Each photo gets its moment, then the whole thing lights up
+      together.</p>
+    </li>
+    <li>
+      <h3>Templates that move</h3>
+      <p>Confetti that bursts, hearts that rise, words that type themselves on screen. Every
+      template is a look somebody designed, not a filter you have to configure.</p>
+    </li>
+    <li>
+      <h3>Cut the background out</h3>
+      <p>Some templates lift the subject out of the photo and stand them on the design, so the
+      video looks made rather than assembled.</p>
+    </li>
+    <li>
+      <h3>Yours, if you want it to be</h3>
+      <p>Add your own words and emoji, and say where they sit and which photo they belong to.
+      Change the background, the transition, the length, the music — or change nothing at all,
+      which is the point.</p>
+    </li>
+    <li>
+      <h3>No watermark. No subscription.</h3>
+      <p>Nothing is stamped on your video and nothing renews.</p>
+    </li>
+    <li>
+      <h3>On your device</h3>
+      <p>No account, no sign-in, nothing uploaded. Your photos are read when you pick them,
+      and everything FramePop makes stays on your phone until you share it.</p>
+    </li>
+  </ul>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the <a href="/framepop/support/">support page</a>,
+  and what the app does with your data is in the
+  <a href="/framepop/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/framepop/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/framepop/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
