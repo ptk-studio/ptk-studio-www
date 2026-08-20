@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mochi Trip</title>
+<meta name="description" content="How Mochi Trip handles what you type, and where your itinerary is written.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #da664c;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .updated { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--faint); }
+  .lede {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .lede p { margin: 0; }
+  ul:not(.qa) { margin: 0 0 1rem; padding-left: 1.15rem; color: var(--muted); }
+  ul:not(.qa) li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Trip</p>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated 20 August 2026</p>
+
+  <div class="contact">
+    <p><strong>The short version.</strong> There is no account and no sign-in, and we run no
+    server of our own. On iPhones that support Apple Intelligence, your itinerary is written on
+    the device and nothing you type leaves it. On iPhones that cannot run Apple Intelligence,
+    the trip details you enter are sent to Google to write the plan. Which of those applies is
+    shown in the app, under Settings.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi Trip is made by PTK Studio. This policy covers the Mochi Trip iOS app and this page.
+  If anything here is unclear, write to <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>
+  and we'll answer plainly.</p>
+
+  <h2>What you tell the app</h2>
+  <p>To write a plan, Trip asks for a destination, how many days, what the trip is for, who is
+  travelling, a budget, and an optional notes field you can type anything into. That is the
+  whole of what it asks for. There is no name, no email, no account.</p>
+
+  <h2>Where the plan is written</h2>
+  <p><strong>On your iPhone, where it can be.</strong> On devices that support Apple
+  Intelligence, Apple's on-device model writes the itinerary. Nothing you typed is transmitted,
+  and the app works with the phone in aeroplane mode.</p>
+  <p><strong>Through Google, where it cannot.</strong> Older iPhones cannot run Apple
+  Intelligence. On those, the plan is written by a Gemini model reached through Firebase AI
+  Logic, and the details above — including anything you wrote in the notes field — are sent to
+  Google in order to produce it. Google's handling of that request is governed by their terms;
+  we do not receive a copy and we keep no record of it.</p>
+  <p>The app tells you which one is in use. Settings names the model and says, in the same
+  words, whether your details are being sent anywhere.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>The plans you save.</li>
+    <li>A cache of plans already generated, so asking for the same trip twice doesn't write it twice.</li>
+    <li>A local count of plans written this month, and — where the hosted model is used — a
+    running estimate of what it cost.</li>
+    <li>Your settings.</li>
+  </ul>
+  <p>These live in the app's own storage. We have no copy of them and cannot read them. Deleting
+  the app deletes them. You can also delete saved trips individually, or all at once, in Settings.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> Trip sends no analytics, no crash reports and no usage data to us.
+  We operate no server, so there is nowhere for anything to arrive.</p>
+  <p>If that ever changes, this page will be updated before the version that changes it is
+  released.</p>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
+    <li>Your location. Trip never asks for it, and cannot read it.</li>
+    <li>Your contacts, calendar, photos, or microphone.</li>
+    <li>Advertising identifiers. Trip shows no ads and is not part of any ad network.</li>
+  </ul>
+
+  <h2>Who else touches it</h2>
+  <p><strong>Google</strong>, and only on devices that cannot run Apple Intelligence, for the
+  reason described above. The request is made through Firebase AI Logic, which also runs a check
+  that the request came from a genuine copy of the app rather than something impersonating it.</p>
+  <p>Two more are worth naming because they are yours, not ours. Tapping <strong>Maps</strong>
+  next to a place hands Apple Maps a search for that name — Trip sends no location and learns
+  nothing about what you do there. Tapping <strong>Share</strong> hands the plan's text to
+  whichever app or person you pick, and their privacy policy takes over at that point.</p>
+
+  <h2>Children</h2>
+  <p>Trip is not directed at children and collects nothing that would identify anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it, and the page is updated before
+  the version of the app that made the change is released — not after.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/trip/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/trip/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
