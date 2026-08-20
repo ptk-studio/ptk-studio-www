@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback — Mochi Heartline</title>
+<meta name="description" content="Tell us what you think of Mochi Heartline.">
+<meta name="robots" content="noindex">
+
+<!--
+  WHERE FEEDBACK GOES
+
+  The app's Settings → Feedback screen opens this page, not the form
+  below. Change the two URLs here — the refresh and the link — and every copy of
+  the app that is already on a phone follows the new destination. Changing it in
+  the app means an App Store release.
+
+  Keep both in step, and keep the visible link: a redirect that does not fire
+  should still land somewhere useful.
+-->
+<meta http-equiv="refresh" content="0; url=https://docs.google.com/forms/d/e/1FAIpQLSc0oFE6AOCO5IDlyraxlwfHanInGreib0cJTQwctTt8qKdjog/viewform">
+<link rel="canonical" href="https://ptk-studio.com/apps/heartline/feedback/">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #c2536b;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Heartline</p>
+  <h1>Taking you to the feedback form…</h1>
+  <p class="sub">If nothing happens in a moment, the link below will get you there.</p>
+
+  <p><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc0oFE6AOCO5IDlyraxlwfHanInGreib0cJTQwctTt8qKdjog/viewform">Open the feedback form &#8599;</a></p>
+
+  <h2>Or just write to us</h2>
+  <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> — tell us what you
+  were doing, and your iPhone model and iOS version if something is broken.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/heartline/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/heartline/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
