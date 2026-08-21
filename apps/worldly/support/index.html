@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worldly — Support</title>
+<meta name="description" content="Common questions about Worldly: offline use, how current the data is, bookmarks, and turning analytics off.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #1b5176;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Worldly</p>
+  <h1>Support</h1>
+  <p class="sub">An offline reference to every country in the world. If something isn't
+  working, or a fact needs correcting, there's a real person at the other end of the links
+  below.</p>
+
+  <h2>Common questions</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">Does it work without an internet connection?</p>
+      <p class="a">Yes, completely. The entire reference &mdash; every country, holiday and
+      date &mdash; ships inside the app and is copied to your device the first time you open
+      it. Nothing is fetched while you read.</p>
+    </li>
+    <li>
+      <p class="q">Why isn't <em>[territory]</em> in here?</p>
+      <p class="a">The list covers sovereign states &mdash; the 193 UN member states plus
+      Vatican City, Palestine and Taiwan &mdash; along with Hong Kong. That means places like
+      Macau, Puerto Rico, Greenland and Bermuda aren't included yet, because they're
+      territories rather than countries. If one you need is missing, tell us and we'll look
+      at adding it.</p>
+    </li>
+    <li>
+      <p class="q">How current is the information?</p>
+      <p class="a">Figures were compiled as of May 2026, and <strong>Settings</strong> shows
+      that date. Populations are estimates, and heads of state and government change &mdash;
+      sometimes at short notice. If you spot something out of date, email us and it'll be
+      corrected in the next update.</p>
+    </li>
+    <li>
+      <p class="q">Can I correct a fact myself?</p>
+      <p class="a">Not in the app. Corrections go into the shared dataset so everyone gets
+      them, rather than only your copy &mdash; so send them to us and they'll arrive with an
+      app update.</p>
+    </li>
+    <li>
+      <p class="q">Where are my bookmarks stored?</p>
+      <p class="a">On your device, and nowhere else. There's no account and nothing syncs, so
+      deleting the app deletes them. Refreshing the country data in Settings never touches
+      them.</p>
+    </li>
+    <li>
+      <p class="q">Can I turn off usage tracking?</p>
+      <p class="a">Yes. Open <strong>Settings</strong> and switch off <em>Share anonymous
+      usage data</em>. Collection stops straight away and nothing else changes &mdash; the
+      reference is offline, so no feature depends on it. Whatever you type into the search
+      box is never sent anywhere, on or off.</p>
+    </li>
+    <li>
+      <p class="q">What are the buttons under each country?</p>
+      <p class="a">They switch between five views of the same country: <strong>Overview</strong>
+      for geography and people, <strong>Government</strong> for who leads it,
+      <strong>Holidays</strong> for public holidays and what they mark,
+      <strong>History</strong> for a summary and dated timeline, and <strong>Facts</strong>
+      for the rest. Settings lets you choose which one opens first.</p>
+    </li>
+    <li>
+      <p class="q">Something looks wrong after an update.</p>
+      <p class="a">Open <strong>Settings &rarr; Refresh from bundled data</strong>, which
+      re-applies the shipped dataset and keeps your bookmarks. If it's still wrong,
+      <strong>Reset database</strong> rebuilds everything from scratch &mdash; that one does
+      clear bookmarks.</p>
+    </li>
+  </ul>
+
+  <h2>Still stuck, or want to suggest something</h2>
+
+  <div class="contact">
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> &mdash; tell us
+    your iPhone model and iOS version if something is broken, and we'll get back to you.</p>
+    <p style="margin:0">Spotted a fact that needs correcting? Send the country and what's
+    wrong, and it'll go into the next update.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Short version: the reference is offline, your bookmarks never leave your device, and we
+  don't ask who you are. The full detail is in the
+  <a href="/apps/worldly/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/worldly/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
