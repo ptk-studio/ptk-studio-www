@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi College</title>
+<meta name="description" content="Mochi College is an offline guide to every US college — costs, admissions, majors and outcomes, from the federal College Scorecard.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a7edf;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi College</p>
+  <h1>Every US college, in your pocket.</h1>
+  <p class="sub">Costs, admission rates, majors, class sizes and what graduates go on to earn
+  &mdash; drawn from the federal College Scorecard. The whole dataset ships inside the app, so
+  searching it needs no signal and tells no one what you looked at.</p>
+
+  <p class="sub"><strong>Coming soon to the App Store.</strong></p>
+
+  <h2>What it is</h2>
+
+  <ul class="points">
+    <li>
+      <h3>The federal dataset, made browsable</h3>
+      <p>6,429 institutions, every one that reports to the U.S. Department of Education &mdash;
+      research universities, liberal arts colleges, community colleges and trade schools alike.
+      Not a curated shortlist of the famous ones.</p>
+    </li>
+    <li>
+      <h3>Nothing is fetched while you browse</h3>
+      <p>Every figure is stored on the device. The app is as useful on a plane as it is at a
+      kitchen table, and a search is never a request to a server &mdash; nobody, ourselves
+      included, can see which schools you opened.</p>
+    </li>
+    <li>
+      <h3>Filter by what actually decides it</h3>
+      <p>Narrow by state, tuition, acceptance rate, enrolment, SAT range, campus setting and
+      whether a school is public, private or for-profit &mdash; or show only test-optional
+      schools, HBCUs, or women's colleges. Then sort what's left by cost, selectivity,
+      graduation rate or what graduates earn.</p>
+    </li>
+    <li>
+      <h3>Three ways in when you have no name to type</h3>
+      <p>Browse by state, browse by major &mdash; grouped into fields, so you can start from
+      what you want to study &mdash; or open a curated list: best value public schools, hidden
+      gems, test-optional schools, top HBCUs, highest earning graduates.</p>
+    </li>
+    <li>
+      <h3>Build a list you can annotate</h3>
+      <p>Save a school and it lands in My List, where each one takes a note &mdash; a deadline,
+      a campus visit, why it caught your eye. Your list stays on your device.</p>
+    </li>
+    <li>
+      <h3>What isn't here</h3>
+      <p>No ads. No account, no sign-up, no password. No paywall in front of the data, and
+      nothing nagging you to come back.</p>
+    </li>
+  </ul>
+
+  <h2>About the data</h2>
+  <p>Figures come from the U.S. Department of Education's
+  <a href="https://collegescorecard.ed.gov/">College Scorecard</a>, the public dataset colleges
+  are required to report into, as published in its April 2025 release &mdash; 6,429 institutions
+  and 219,079 program records. Because the reporting cycle runs behind the academic year, treat
+  the numbers as the shape of a school rather than a quote: costs in particular are what was
+  last reported, not what you will be billed.</p>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the <a href="/apps/college/support/">support
+  page</a>, what the app does with your data is in the
+  <a href="/apps/college/privacy/">privacy policy</a>, and anything else is welcome at
+  <a href="/apps/college/feedback/">feedback</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/college/support/">Support</a>
+    &nbsp;&middot;&nbsp; <a href="/apps/college/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
