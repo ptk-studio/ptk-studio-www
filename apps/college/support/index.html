@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi College</title>
+<meta name="description" content="Help with Mochi College — browsing, saving, offline use, and where the numbers come from.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a7edf;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .updated { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--faint); }
+  .lede {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .lede p { margin: 0; }
+  ul:not(.qa) { margin: 0 0 1rem; padding-left: 1.15rem; color: var(--muted); }
+  ul:not(.qa) li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi College</p>
+  <h1>Support</h1>
+  <p class="sub">Mochi College is a browsable copy of the federal college data, sitting on your
+  phone. If something isn't behaving, start here — and if the answer isn't below, write to us.</p>
+
+  <h2>Common questions</h2>
+  <ul class="qa">
+    <li>
+      <p class="q">Does it work without a connection?</p>
+      <p class="a">Yes, all of it. Every college, every figure and every filter ships inside the
+      app, so browsing, searching and saving work in aeroplane mode. The only thing that needs a
+      connection is tapping through to a college's own website.</p>
+    </li>
+    <li>
+      <p class="q">Where do the numbers come from?</p>
+      <p class="a">The U.S. Department of Education's <strong>College Scorecard</strong>, the
+      public dataset colleges are required to report into. Costs, admission rates, enrolment and
+      programs are as that dataset last published them, which means they trail the current
+      academic year — treat them as the shape of a school, not a quote.</p>
+    </li>
+    <li>
+      <p class="q">A college is missing, or a figure looks wrong.</p>
+      <p class="a">Both trace back to the same place. A school missing from the Scorecard, or
+      reporting nothing for a given field, is missing here too, and a figure that looks odd is
+      usually odd at the source. Tell us which school and which number at
+      <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> — we check it against the
+      dataset and pick it up in the next update.</p>
+    </li>
+    <li>
+      <p class="q">How does the data get updated?</p>
+      <p class="a">Through an app update. Because the figures live in the app rather than on a
+      server, a refreshed dataset arrives as a new version from the App Store.</p>
+    </li>
+    <li>
+      <p class="q">How do I save a college, and can I annotate it?</p>
+      <p class="a">Save from anywhere you see a college — Browse, Explore or the school's own
+      page — and it lands in <strong>My List</strong>. Each saved school takes a note, which is
+      the place for a deadline, a campus visit, or why it caught your eye.</p>
+    </li>
+    <li>
+      <p class="q">What's in Explore?</p>
+      <p class="a">Three ways in when you don't have a name to type: <strong>curated lists</strong>,
+      <strong>browse by state</strong>, and <strong>browse by major</strong> — the last grouped
+      into categories so you can start from a field rather than a school.</p>
+    </li>
+    <li>
+      <p class="q">Can I switch to dark mode?</p>
+      <p class="a"><strong>Settings → Appearance</strong>, Light or Dark.</p>
+    </li>
+    <li>
+      <p class="q">How do I delete my data?</p>
+      <p class="a">Swipe a school in My List to remove it, or clear the whole list from
+      <strong>Settings → Data</strong>. Everything the app keeps lives on your phone, so
+      deleting the app takes the rest with it. There is no account to close, because there
+      was never one to open.</p>
+    </li>
+    <li>
+      <p class="q">What do you collect about me?</p>
+      <p class="a">Nothing that identifies you, and nothing about which colleges you look at —
+      searches never leave the device. We do count app opens and screen views to see which
+      parts get used. The <a href="/apps/college/privacy/">privacy policy</a> names the two
+      services involved and exactly what each one receives.</p>
+    </li>
+  </ul>
+
+  <div class="contact">
+    <h2>Still stuck</h2>
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Tell us your iPhone
+    model, the iOS version, and which school or screen you were on — that is the detail that
+    helps most.</p>
+  </div>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/college/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/college/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
