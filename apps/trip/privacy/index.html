@@ -149,7 +149,8 @@
     server of our own. On iPhones that support Apple Intelligence, your itinerary is written on
     the device and nothing you type leaves it. On iPhones that cannot run Apple Intelligence,
     the trip details you enter are sent to Google to write the plan. Which of those applies is
-    shown in the app, under Settings.</p>
+    shown in the app, under Settings. On every device the app also reports anonymous usage
+    measurement — how the app is used, never your destination or the words you type.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -186,22 +187,41 @@
   the app deletes them. You can also delete saved trips individually, or all at once, in Settings.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> Trip sends no analytics, no crash reports and no usage data to us.
-  We operate no server, so there is nowhere for anything to arrive. Nothing is gathered in the
-  background, and nothing is gathered without you doing something deliberate — the one thing you
-  can deliberately send us is <a href="#feedback">feedback</a>, described below.</p>
-  <p>If that ever changes, this page will be updated before the version that changes it is
-  released.</p>
+  <p>Trip measures how the app is used, so we can tell whether it works. This is done through
+  <strong>Statsig</strong>, an analytics service. It is the only thing the app reports on its own,
+  and it is deliberately narrow.</p>
+  <p><strong>What an event carries:</strong> the shape of a request and what happened to it — how
+  many days, which kind of traveller and budget you picked, which of the trip purposes, whether
+  the notes box had anything in it, whether the plan was written on the device or in the cloud,
+  and whether it succeeded, failed or came from the cache. Also which buttons get used: a plan
+  saved, a day rewritten, a place opened in Maps.</p>
+  <p><strong>What an event never carries:</strong> your destination, the words you typed in the
+  notes box, or the name of any place in your itinerary. Those are either written by you or
+  describe where you are going, and they are left out on purpose. A failure is reported as a
+  category — "network", "refused", "decoding" — never as the underlying message, because a
+  model's error text can quote your prompt back.</p>
+  <p><strong>Who you are in that data:</strong> a random identifier the app generates on first
+  launch and keeps, so events from one phone can be counted as one phone over time. It is not
+  your name, your email or your Apple Account, it is not shared with anyone else, and deleting the
+  app ends it. As with any service reached over the internet, Statsig also sees the technical
+  details of the connection itself, including your device model, OS version, app version and IP
+  address.</p>
+  <p>We still run <strong>no server of our own</strong>, and there are no crash reports and no
+  advertising measurement of any kind.</p>
+  <p>If any of this changes, this page will be updated before the version that changes it is
+  released.
 
   <h2>What we never collect</h2>
   <ul>
     <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
     <li>Your location. Trip never asks for it, and cannot read it.</li>
     <li>Your contacts, calendar, photos, or microphone.</li>
-    <li>Advertising identifiers. Trip shows no ads and is not part of any ad network.</li>
+    <li>Advertising identifiers. Trip shows no ads, is not part of any ad network, and the
+    measurement described above is not used for advertising.</li>
   </ul>
 
   <h2>Who else touches it</h2>
+  <p><strong>Statsig</strong>, for the measurement described above, on every device.</p>
   <p><strong>Google</strong>, and only on devices that cannot run Apple Intelligence, for the
   reason described above. The request is made through Firebase AI Logic, which also runs a check
   that the request came from a genuine copy of the app rather than something impersonating it.</p>
