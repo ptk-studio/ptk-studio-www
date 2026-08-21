@@ -146,11 +146,10 @@
 
   <div class="contact">
     <p><strong>The short version.</strong> There is no account and no sign-in, and we run no
-    server of our own. On iPhones that support Apple Intelligence, your itinerary is written on
-    the device and nothing you type leaves it. On iPhones that cannot run Apple Intelligence,
-    the trip details you enter are sent to Google to write the plan. Which of those applies is
-    shown in the app, under Settings. On every device the app also reports anonymous usage
-    measurement — how the app is used, never your destination or the words you type.</p>
+    server of our own. To write your itinerary, the trip details you enter — including anything
+    you type in the notes box — are sent to Google, whose model writes it. The app also reports
+    anonymous usage measurement: how the app is used, never your destination or the words you
+    type.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -164,16 +163,17 @@
   whole of what it asks for. There is no name, no email, no account.</p>
 
   <h2>Where the plan is written</h2>
-  <p><strong>On your iPhone, where it can be.</strong> On devices that support Apple
-  Intelligence, Apple's on-device model writes the itinerary. Nothing you typed is transmitted,
-  and the app works with the phone in aeroplane mode.</p>
-  <p><strong>Through Google, where it cannot.</strong> Older iPhones cannot run Apple
-  Intelligence. On those, the plan is written by a Gemini model reached through Firebase AI
-  Logic, and the details above — including anything you wrote in the notes field — are sent to
-  Google in order to produce it. Google's handling of that request is governed by their terms;
-  we do not receive a copy and we keep no record of it.</p>
-  <p>The app tells you which one is in use. Settings names the model and says, in the same
-  words, whether your details are being sent anywhere.</p>
+  <p><strong>By Google's Gemini model, reached through Firebase AI Logic.</strong> Everything
+  listed above — the destination, the length, the purposes, who is travelling, the budget and
+  anything you wrote in the notes box — is sent there in order to write your itinerary. Google's
+  handling of that request is governed by their terms; we do not receive a copy of it and we keep
+  no record of it.</p>
+  <p>This needs a working network connection, and it is how every plan is written. Settings names
+  the model in use, so you can always see what is answering.</p>
+  <p>Earlier versions wrote plans on the device itself where the iPhone supported it. That is no
+  longer how the app works: the hosted model writes noticeably better itineraries, and running one
+  engine rather than two is the reason. The trade is stated here rather than buried — you get a
+  better plan, and your trip details leave the phone to get it.</p>
 
   <h2>What stays on your device</h2>
   <ul>
@@ -222,9 +222,9 @@
 
   <h2>Who else touches it</h2>
   <p><strong>Statsig</strong>, for the measurement described above, on every device.</p>
-  <p><strong>Google</strong>, and only on devices that cannot run Apple Intelligence, for the
-  reason described above. The request is made through Firebase AI Logic, which also runs a check
-  that the request came from a genuine copy of the app rather than something impersonating it.</p>
+  <p><strong>Google</strong>, for the reason described above: their model writes your itinerary.
+  The request is made through Firebase AI Logic, which also runs a check that it came from a
+  genuine copy of the app rather than something impersonating it.</p>
   <p>Two more are worth naming because they are yours, not ours. Tapping <strong>Maps</strong>
   next to a place hands Apple Maps a search for that name — Trip sends no location and learns
   nothing about what you do there. Tapping <strong>Share</strong> hands the plan's text to
