@@ -121,7 +121,7 @@
 
   <p class="eyebrow">Worldly</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 20 August 2026</p>
+  <p class="updated">Last updated 23 August 2026</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> The whole country reference lives on your device
@@ -163,6 +163,17 @@
     infer a coarse region (such as a country) and does not expose your precise location to us.</li>
   </ul>
 
+  <p>If the app crashes, it also sends a crash report to Firebase Crashlytics, so we can
+  find and fix the fault. A report contains the technical state of the app at the moment
+  it stopped &mdash; a stack trace, the device model and OS version, and a random
+  identifier Crashlytics generates for the installation. <strong>It does not contain
+  anything about what you were reading</strong>: no country, no search, no bookmark. The
+  country database is stored on your device, and nothing about it is attached to a
+  report.</p>
+
+  <p>We have deliberately not enabled Google Analytics on the Firebase project. Crash
+  reporting is the only Firebase feature the app uses.</p>
+
   <h2>What we never collect</h2>
   <ul>
     <li><strong>What you type into the search box.</strong> Search events record how many
@@ -182,8 +193,12 @@
   advertising, and there are no ads in the app.</p>
 
   <h2>Who else touches it</h2>
-  <p>One provider: <a href="https://www.statsig.com/privacy" target="_blank" rel="noopener noreferrer">Statsig</a>,
-  which processes the anonymous usage events described above on our behalf.</p>
+  <p>Two providers:
+  <a href="https://www.statsig.com/privacy" target="_blank" rel="noopener noreferrer">Statsig</a>,
+  which processes the anonymous usage events described above, and
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase
+  Crashlytics</a> (Google), which processes crash reports. Both act on our behalf and
+  neither receives anything that identifies you.</p>
 
   <h2>How long we keep it</h2>
   <p>Anonymous usage events are retained by our analytics provider on a rolling basis and
@@ -192,10 +207,10 @@
 
   <h2>Your choices and rights</h2>
   <ul>
-    <li><strong>Turn analytics off in the app.</strong> Open <strong>Settings</strong> and
-    switch off <em>Share anonymous usage data</em>. Collection stops immediately and the app
-    keeps working exactly as before &mdash; the reference is entirely offline, so nothing
-    depends on it.</li>
+    <li><strong>Turn it off in the app.</strong> Open <strong>Settings</strong> and switch
+    off <em>Share anonymous usage data</em>. That single switch stops both the usage events
+    and the crash reports, immediately, and the app keeps working exactly as before &mdash;
+    the reference is entirely offline, so nothing depends on either.</li>
     <li><strong>Stop the collection entirely</strong> by deleting the app. The install
     identifier is stored on your device, so removing the app ends the link for good.</li>
     <li><strong>Ask us questions, or ask us to delete something</strong>, by writing to
