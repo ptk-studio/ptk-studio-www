@@ -149,7 +149,7 @@
     server of our own. To write your itinerary, the trip details you enter — including anything
     you type in the notes box — are sent to Google, whose model writes it. The app also reports
     anonymous usage measurement: how the app is used, never your destination or the words you
-    type.</p>
+    type — and a crash report if it crashes.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -206,8 +206,20 @@
   app ends it. As with any service reached over the internet, Statsig also sees the technical
   details of the connection itself, including your device model, OS version, app version and IP
   address.</p>
-  <p>We still run <strong>no server of our own</strong>, and there are no crash reports and no
-  advertising measurement of any kind.</p>
+  <p>We still run <strong>no server of our own</strong>, and there is no advertising measurement
+  of any kind.</p>
+
+  <h2>Crash reports</h2>
+  <p>When the app crashes, it sends a report through <strong>Firebase Crashlytics</strong>, so the
+  fault can be found and fixed. This happens whether or not you have accepted anything else — a
+  crash is the app failing, and we would rather know.</p>
+  <p><strong>What a report contains:</strong> where in the code it stopped, your device model and
+  iOS version, the version of the app, how long it had been running, and whether Apple Intelligence
+  is available on the device — because that decides which part of the app was doing the work. It
+  also carries an identifier Crashlytics generates for the install, so two reports from the same
+  phone can be recognised as the same phone.</p>
+  <p><strong>What it does not contain:</strong> your destination, the words you typed, any plan you
+  have written or saved, your name or your email. A crash report describes the app, not the trip.</p>
   <p>If any of this changes, this page will be updated before the version that changes it is
   released.
 
@@ -222,6 +234,7 @@
 
   <h2>Who else touches it</h2>
   <p><strong>Statsig</strong>, for the measurement described above, on every device.</p>
+  <p><strong>Firebase Crashlytics</strong>, part of Google, for crash reports.</p>
   <p><strong>Google</strong>, for the reason described above: their model writes your itinerary.
   The request is made through Firebase AI Logic, which also runs a check that it came from a
   genuine copy of the app rather than something impersonating it.</p>
