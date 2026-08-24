@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi Kinling</title>
+<meta name="description" content="Help with Mochi Kinling: awakening, care, passports, and what the app can and cannot tell you.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #3f7c4a;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Kinling</p>
+  <h1>Support</h1>
+  <p class="sub">Photograph something alive and Kinling turns it into a companion with a
+  passport. If something isn't working, or you want to tell us what you think, there's a real
+  person at the other end of the links below.</p>
+
+  <h2>Common questions</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">It says it can't find anything in my photo.</p>
+      <p class="a">Kinling looks for a clear foreground subject, so it struggles with a busy
+      background, a very distant subject, or something the same colour as what's behind it.
+      Get closer and fill more of the frame. If it still can't, you can awaken it anyway as a
+      <strong>Living Sticker</strong> — the whole picture becomes the companion. That is a
+      real Kinling, not a consolation prize.</p>
+    </li>
+    <li>
+      <p class="q">Why won't it tell me what species this is?</p>
+      <p class="a">Because it doesn't reliably know, and pretending otherwise would be worse
+      than useless. Kinling is good at shape — it can usually tell a four-winged insect from
+      a flowering plant — and much weaker at naming. So it shows a guess with how sure it is,
+      hedged, and lets you correct it. It will never tell you whether something is safe to
+      touch, eat, pick up or move, and you should never use it that way.</p>
+    </li>
+    <li>
+      <p class="q">Mine only moves as one piece. Someone else's has moving wings.</p>
+      <p class="a">There are three levels. A <strong>full rig</strong> animates each part
+      separately and needs the app to be confident about where those parts are. A
+      <strong>basic rig</strong> moves the whole body — sways, leans, glows. A
+      <strong>Living Sticker</strong> breathes and shimmers. Which one you get depends on how
+      clearly the shape read, and you can always ask for a simpler one.</p>
+    </li>
+    <li>
+      <p class="q">I haven't opened the app in weeks. Is my Kinling all right?</p>
+      <p class="a">Yes. Nothing in Kinling dies, wilts permanently, or is lost. After a long
+      absence you'll find it dormant — quieter, dimmer, slower — and a single bit of care
+      brings it fully back. There are no streaks to break and nothing to feel bad about.</p>
+    </li>
+    <li>
+      <p class="q">It isn't growing.</p>
+      <p class="a">Growing needs three things at once: time passing, <em>variety</em> in what
+      you do, and memories worth keeping. Tapping the same button repeatedly is pleasant and
+      deliberately gets you nowhere. Try a different kind of care, add a memory, and come back
+      another day — the habitat screen tells you what's still missing.</p>
+    </li>
+    <li>
+      <p class="q">How do I move my Kinling to another passport page?</p>
+      <p class="a">Press and hold it, then pick a page. How it travels depends on what it is —
+      a butterfly flies, a plant curls into a seed and drifts across. Drag to move it, pinch to
+      resize, twist to rotate. Nothing is redrawn when you do this; the app is just remembering
+      where you put it.</p>
+    </li>
+    <li>
+      <p class="q">Do my photos get uploaded anywhere?</p>
+      <p class="a">No. Everything happens on your phone, and the app works with the network
+      switched off. There's no account and no analytics. The full detail is in the
+      <a href="/apps/kinling/privacy/">privacy policy</a>.</p>
+    </li>
+    <li>
+      <p class="q">How do I delete a photo without losing the Kinling?</p>
+      <p class="a"><strong>Settings → Your data</strong>, then pick the Kinling. You can delete
+      the original photograph on its own, delete the generated artwork, or delete the whole
+      Kinling. Each really removes the files rather than hiding them.</p>
+    </li>
+    <li>
+      <p class="q">Some things say "Preview" or "Coming later".</p>
+      <p class="a">Those aren't built yet — Friends and shared care in particular are sample
+      data, and labelled as such. Nothing in the app is behind a payment today.</p>
+    </li>
+  </ul>
+
+  <h2>Please leave things where you find them</h2>
+
+  <div class="contact">
+    <p style="margin:0">Kinling is for photographing living things, not collecting them. A
+    photograph is enough — nothing needs to be picked, caught, moved or brought indoors for
+    the app to work, and nothing it tells you should be used to decide whether something is
+    safe to handle.</p>
+  </div>
+
+  <h2>Still stuck, or want to suggest something</h2>
+
+  <div class="contact">
+    <p style="margin:0">Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> —
+    tell us your iPhone model and iOS version if something is broken, and roughly what you were
+    photographing, and we'll get back to you.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Short version: your photographs, your Kinlings and your notes never leave your phone, and
+  we don't ask who you are. The full detail is in the
+  <a href="/apps/kinling/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/kinling/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

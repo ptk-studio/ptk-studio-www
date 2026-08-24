@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Kinling</title>
+<meta name="description" content="Photograph something alive and Mochi Kinling turns it into a companion with a Living Passport. Works offline, no account.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #3f7c4a;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Kinling</p>
+  <h1>Every living thing has a story.</h1>
+  <p class="sub">Photograph a flower on a wall, a beetle on the windowsill, the fern in the
+  stairwell. Kinling lifts it out of the picture, draws it as a small sticker of itself, works
+  out how it ought to move, and wakes it up. From then on it lives in your pocket with a
+  passport, a name, and a history.</p>
+
+  <p class="sub"><strong>Coming to the App Store.</strong> It's in testing now — if you'd
+  like to try it early, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>.</p>
+
+  <h2>What it is</h2>
+
+  <ul class="points">
+    <li>
+      <h3>Yours, not a stock character</h3>
+      <p>The companion is made from your photograph — the same colours, the same markings, the
+      same crooked wing. It is that particular flower, not a flower.</p>
+    </li>
+    <li>
+      <h3>A Living Passport</h3>
+      <p>Every Kinling gets a small book: its name and number, where it came from, the stamps
+      it has earned, and its Life Story. Drag it around the pages and it stays there. A
+      butterfly flies between pages. A plant curls into a seed and drifts.</p>
+    </li>
+    <li>
+      <h3>Care that fits what it is</h3>
+      <p>Plants want water and light. Insects want warmth and somewhere good to sit. Nothing
+      is fed pellets from a generic menu, and nothing ever dies — leave for a month and you
+      come back to something sleepy, not something lost.</p>
+    </li>
+    <li>
+      <h3>It grows, slowly</h3>
+      <p>New arrival, Young, Growing, Mature, Elder. Getting there takes time, variety and
+      memories worth keeping — never tapping. There is no way to rush it, which is rather the
+      point.</p>
+    </li>
+    <li>
+      <h3>Honest about what it knows</h3>
+      <p>Kinling can usually tell a four-winged insect from a flowering plant. It is much less
+      sure which one, and it says so instead of pretending. It will never tell you whether
+      something is safe to touch, eat or pick up.</p>
+    </li>
+    <li>
+      <h3>What isn't here</h3>
+      <p>No ads. No account, no sign-up, no password. No streaks, no guilt, nothing nagging
+      you to come back. No trading, no rarity, no leaderboards. Your photographs stay on your
+      phone.</p>
+    </li>
+  </ul>
+
+  <h2>Please leave things where you find them</h2>
+  <p>Kinling is made for photographing living things, not collecting them. A photograph is
+  enough — nothing needs to be picked, caught or moved for the app to work.</p>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the <a href="/apps/kinling/support/">support
+  page</a>, and what the app does with your data is in the
+  <a href="/apps/kinling/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/kinling/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/kinling/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
