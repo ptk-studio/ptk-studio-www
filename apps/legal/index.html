@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Legal</title>
+<meta name="description" content="How common legal processes work in the US: five areas of law, fourteen situations, every claim linked to the official page it came from. No account, no questionnaire.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #a9683a;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">PTK Studio</p>
+  <h1>Mochi Legal</h1>
+  <p class="lede">How common legal processes work in the United States &mdash; the stages, who
+  decides, roughly how long it takes, what it costs, and how much of it changes depending on
+  the state you are in. A reference, not a case tracker. It asks you nothing.</p>
+
+  <h2>Five areas, fourteen situations</h2>
+  <p>Family law, housing, work, money and debt, and small claims. Inside them: divorce, child
+  custody, child support, eviction, deposits and repairs, housing discrimination, unpaid wages
+  and overtime, discrimination and harassment at work, losing your job, debt collection and
+  being sued, credit reports and errors, bankruptcy, filing a small claim and being sued in
+  one.</p>
+  <p>Each situation opens on what the process is, its stages in order, who decides it, and the
+  ranges for time and cost &mdash; framed as what usually happens, never as what will happen
+  to you.</p>
+
+  <h2>Eighty-six focus areas</h2>
+  <p>Inside each situation are five to ten specific things worth understanding, plus a
+  catch-all for whatever did not fit. That is where the value is. A generic explainer tells you
+  what a divorce is; separating dividing property, retirement accounts, the family home,
+  health insurance and remarriage into topics of their own is what makes the difference
+  between reading about a process and understanding your own.</p>
+
+  <h2>National, and honest about it</h2>
+  <p>Almost everything in family law and housing is state law. Mochi Legal describes the shape
+  that is common across the US and states, on every single situation, how much it varies
+  between states &mdash; then points at that state's own court site for the specifics.
+  Reviewed state-specific writing lives only in a clearly labelled appendix. There is no
+  jurisdiction picker, because a national app quietly presenting one state's rule as everyone's
+  is the most dangerous thing it could do.</p>
+
+  <h2>Every claim has a source</h2>
+  <p>Substantive statements link to the official page they came from &mdash; court self-help
+  guides, statutes, government agencies &mdash; folded under the section that uses them, one
+  tap away rather than buried in an About screen. Nobody has to take the app's word for
+  anything.</p>
+
+  <h2>It asks you nothing</h2>
+  <p>No account, no sign-in, no questionnaire, and nowhere to type a name. The only thing kept
+  is the list of pages you bookmarked, and it never leaves the device. There is an optional
+  Face ID lock, a switch that hides the screen in the app switcher, and a Leave button that
+  closes what you have open &mdash; because a share of the people reading about eviction or
+  domestic violence are doing it on a shared phone.</p>
+
+  <h2>Important</h2>
+  <p>Mochi Legal provides general legal information, not legal advice. It cannot tell you what
+  to do about your own situation, predict what a court will decide, calculate a support amount
+  or a property share, or tell you whether you qualify for anything. It does not create an
+  attorney-client relationship and does not replace a licensed attorney or a court self-help
+  center. It points at legal aid, court self-help centres and safety resources throughout.</p>
+
+  <p class="footer"><a href="support/">Support</a> &middot;
+  <a href="privacy/">Privacy</a> &middot;
+  <a href="https://ptk-studio.com/">PTK Studio</a></p>
+</div>
+</body>
+</html>
