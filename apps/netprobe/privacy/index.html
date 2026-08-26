@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mochi NetProbe</title>
+<meta name="description" content="What Mochi NetProbe does with your data. Short version: scans stay on your phone and nothing is sent to us.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a5cd4;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi NetProbe</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 26 August 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> NetProbe looks at the network you are already
+    joined to. Everything it finds — the devices, the names you give them, your notes and
+    your scan history — stays on your phone. There is no account, no analytics, and no
+    server of ours. We do not know what is on your network, and we have no way to find out.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi NetProbe is made by PTK Studio. This policy covers the Mochi NetProbe iOS app and
+  this page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we'll answer plainly.</p>
+
+  <h2>What stays on your device</h2>
+  <p>All of it. Everything the app produces lives in its own storage on your phone:</p>
+  <ul>
+    <li>The devices each scan found — their addresses, hardware addresses, names, open
+    ports and everything identified about them.</li>
+    <li>Your scan history per network, which is how the app can tell you a device is new.</li>
+    <li>Any name or note you attach to a device.</li>
+    <li>Your settings.</li>
+  </ul>
+  <p>We have no copy of any of it and we cannot read it. Deleting the app deletes it.</p>
+
+  <h2>What we collect</h2>
+  <p>Nothing. There is no analytics provider, no crash reporter, no advertising SDK, and no
+  server of ours for the app to talk to.</p>
+  <p>This is worth stating plainly rather than burying, because a network scanner is exactly
+  the kind of app where it would matter: we do not know how many devices are on your network,
+  what they are, what you named them, when you last scanned, or whether you have opened the
+  app at all.</p>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
+    <li>Your contacts, photos, calendar, microphone, or camera.</li>
+    <li>Your location, precise or otherwise.</li>
+    <li>Your advertising identifier. The app does not ask to track you across other
+    companies' apps and websites, so you will never see an App Tracking Transparency prompt.</li>
+  </ul>
+
+  <h2>Permissions, and when they are asked for</h2>
+  <p>NetProbe asks for one thing:</p>
+  <ul>
+    <li><strong>Local network access</strong> — requested the first time you scan, because
+    finding the devices on your network is the whole app. iOS shows this prompt itself. The
+    permission lets the app talk to other devices on the network you are joined to; it does
+    not grant access to your files, your accounts, or anything on the internet.</li>
+  </ul>
+  <p>That is the complete list. The app does not ask for location, camera, photos, contacts,
+  microphone, or notifications.</p>
+
+  <h2>What the app sends over your network</h2>
+  <p>During a scan, NetProbe sends ordinary network requests to the devices on your own
+  network and reads what they send back — the same kinds of request a browser, a printer
+  driver or a music app already makes. It asks each device what it will freely say about
+  itself. It does not attempt to log in, does not send passwords, and does not change any
+  setting on any device.</p>
+  <p>Nothing about a scan leaves your network. Scan results are never uploaded, because
+  there is nowhere for them to go.</p>
+
+  <h2>The two things that reach the internet</h2>
+  <p>Two features in the Tools tab deliberately go beyond your own network. Neither runs
+  during a scan, and neither runs unless you tap it:</p>
+  <ul>
+    <li><strong>WHOIS lookup.</strong> The domain or address you type is sent to the public
+    WHOIS system — first to IANA, then to whichever registry IANA points at — which is how
+    a WHOIS lookup works anywhere. Those operators see the query and your IP address. Only
+    what you type is sent.</li>
+    <li><strong>Public IP address.</strong> If you tap "Look up" on the network card, the app
+    makes one request to <a href="https://www.ipify.org" target="_blank" rel="noopener noreferrer">ipify.org</a>,
+    a free service whose only job is to reply with the address your request came from. It
+    sends nothing about you or your devices; the address is simply what any web server would
+    already see.</li>
+  </ul>
+  <p>Neither result is stored anywhere but on your phone, and neither is sent to us.</p>
+
+  <h2>Who else touches it</h2>
+  <p>Nobody. There are no third-party services inside the app, and no data of yours is shared
+  with, sold to, or processed by anyone. The two lookups above talk to public internet
+  infrastructure at your request, and that is the extent of it.</p>
+
+  <h2>Children</h2>
+  <p>Mochi NetProbe is not directed at children under 13, and we do not knowingly collect
+  personal information from them — we do not collect personal information from anyone. There
+  is no chat, no user-to-user messaging, and no public content in the app.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Clear your history</strong> in <strong>Tools → Known networks</strong>, which
+    forgets every remembered network, the names you gave devices, and your notes.</li>
+    <li><strong>Delete everything</strong> by deleting the app.</li>
+    <li><strong>Ask us anything</strong> at <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>.
+    Depending on where you live you may have rights to access, correct, or delete your
+    personal information. We honour those requests regardless of where you live — though in
+    NetProbe's case the honest answer is that we hold nothing of yours to give back or
+    erase, because it never left your phone.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change what the app collects, we'll update this page and change the date at the
+  top before the change ships. Material changes will also be noted in the release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a></p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/netprobe/support/">NetProbe support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
