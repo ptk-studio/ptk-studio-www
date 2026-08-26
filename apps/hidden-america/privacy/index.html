@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden America &mdash; Privacy Policy</title>
+<meta name="description" content="Hidden America collects nothing. No accounts, no analytics, no crash reporting, no tracking. This is what the app sends, and to whom.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #a9683a;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Hidden America</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 26 August 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> We collect nothing. There is no account, no
+    sign-up, no analytics, no crash reporting and no advertising identifier &mdash; the app
+    sends us nothing at all, and we could not identify you if we wanted to. The National
+    Register ships inside the app, so browsing it is entirely offline. Your passport, your
+    notes and your API key stay on your phone. Three outside services see a request when you
+    use the features that need them, and each is named below.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Hidden America is made by PTK Studio. This policy covers the Hidden America iOS app and
+  this page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we will answer plainly.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> The app contains no analytics, no crash reporting and no
+  advertising or attribution SDK of any kind. It never contacts a server of ours &mdash; we do
+  not run one. We do not know how many places you have looked at, which state you browsed, or
+  whether you opened the app at all.</p>
+  <p>Because we hold nothing about you, there is nothing for us to sell, share with data
+  brokers, or use to advertise to you. There are no ads in the app.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>Your passport &mdash; the places you marked visited, your notes, what you took away
+    from each, and the dates.</li>
+    <li>Places you saved for later.</li>
+    <li>Your Anthropic API key, if you added one. It is held in the iOS keychain.</li>
+    <li>Any style, era or theme the guide worked out for a listing, cached so it is only ever
+    worked out once.</li>
+    <li>The National Register snapshot itself &mdash; all 90,180 listings ship inside the
+    app.</li>
+    <li>Your settings.</li>
+  </ul>
+  <p>These live in the app's own storage. We have no copy and cannot read them. Deleting the
+  app deletes them.</p>
+
+  <h2>What the app sends, and to whom</h2>
+  <p>Three services, each for a specific job, and none of them ours:</p>
+  <ul>
+    <li><strong>The National Park Service</strong> (<code>mapservices.nps.gov</code>) receives
+    the rectangle of the map you are looking at, so the app can pick up listings added since
+    the snapshot was cut. If you are looking at your own surroundings, that rectangle
+    necessarily describes roughly where you are.</li>
+    <li><strong>The Library of Congress</strong> (<code>loc.gov</code>) receives the name and
+    town of a place when you open it, so the app can find archival photographs of it. That
+    tells them which place you opened, not who opened it.</li>
+    <li><strong>Anthropic</strong> (<code>api.anthropic.com</code>) receives a request only if
+    you have added your own API key, and only when you ask for something. What goes with it
+    depends on what you asked for: the listing's federal record and the titles of the
+    photographs matched to it for a written history; the photograph you captured or chose for
+    Then &amp; Now; and for identifying a building, the photograph together with your
+    coordinates and the direction you are facing.</li>
+  </ul>
+  <p>The app has no key of ours and no account with Anthropic. When you use the guide you are
+  using your own Anthropic account under your own agreement with them, and their handling of
+  those requests is governed by
+  <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">their
+  privacy policy</a>. Remove the key in Settings and the app stops contacting them entirely.</p>
+  <p>Tapping through to a nomination file at the National Archives, or to an item at the
+  Library of Congress, opens that page in your browser in the ordinary way.</p>
+
+  <h2>Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Location, while you are using the app.</strong> Used on the device to show what
+    is around you and to sort places by distance. It is sent nowhere, with the single exception
+    described above: identifying a building from the camera sends your coordinates and heading
+    to Anthropic, because that is what the question requires. Decline the permission and the
+    rest of the app works &mdash; browse, search and the map all function without it.</li>
+    <li><strong>Camera.</strong> Used for identifying a building and for lining up a historical
+    photograph against the view in front of you. A frame leaves the device only when you press
+    the shutter and ask for one of those two things. The app does not record video and never
+    uses the camera in the background.</li>
+  </ul>
+  <p>When you pick an existing photograph instead of taking one, iOS hands the app that single
+  image and nothing else &mdash; the app has no access to your photo library.</p>
+
+  <h2>What the app never touches</h2>
+  <ul>
+    <li>Your name, email address, phone number or any account &mdash; there is no sign-up.</li>
+    <li>Your contacts, calendar, microphone, health data or photo library.</li>
+    <li>Your advertising identifier. The app does not ask to track you across other companies'
+    apps and websites, so you will never see an App Tracking Transparency prompt.</li>
+    <li>Location in the background, or when the app is closed.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Hidden America is not directed at children under 13, and we do not knowingly collect
+  personal information from anyone &mdash; we do not collect any. If you believe a child has
+  provided us with personal information, contact us and we will delete it.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Use it without a key.</strong> The map, search, browsing, the federal record and
+    the passport all work with no Anthropic key at all, and in that state the app contacts
+    Anthropic never.</li>
+    <li><strong>Decline location and camera</strong> in iOS Settings at any time. Both are
+    optional and the app degrades gracefully rather than refusing to run.</li>
+    <li><strong>Delete the app</strong> to remove everything it holds, including your key.</li>
+    <li><strong>Ask us anything</strong>, or ask us to delete something, at
+    <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Depending on where you live
+    you may have rights to access, correct or delete your personal information. We honour those
+    requests regardless of where you live &mdash; though in practice we hold nothing to give
+    you, and we would rather say so plainly than pretend to a process we do not need.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app starts sending anything it does not send today, we will update this page and
+  change the date at the top, and note it in the release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a></p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/hidden-america/support/">Hidden America support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
