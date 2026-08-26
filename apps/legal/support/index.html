@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Legal &mdash; Support</title>
+<meta name="description" content="Help with Mochi Legal: what it covers, what it deliberately will not do, the privacy switches, and how to report an error in the content.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #a9683a;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Mochi Legal</p>
+  <h1>Support</h1>
+
+  <p>Mochi Legal explains how common legal processes work in the US. If something
+  is wrong, unclear, or out of date &mdash; especially the legal content itself &mdash; there
+  is a real person at the other end of the email link below.</p>
+
+  <h2>Common questions</h2>
+
+  <p><strong>Is this legal advice?</strong><br>
+  No, and it is built not to be. Mochi Legal describes what usually happens in a process. It
+  cannot tell you what to do about your own situation, predict what a court will decide,
+  calculate a support amount or a property share, or tell you whether you qualify for
+  anything. Those are things a licensed attorney or a judge does. Reading the app creates no
+  attorney-client relationship.</p>
+
+  <p><strong>Does it cover my state?</strong><br>
+  It covers the shape that is common across the United States, and every situation says
+  explicitly how much that varies between states &mdash; then points at your state's own court
+  site, which is the authority. There is deliberately no jurisdiction picker: almost everything
+  in family law and housing is state law, and quietly presenting one state's rule as everyone's
+  is the worst thing a national app could do. Reviewed state-specific writing appears only in a
+  clearly labelled appendix.</p>
+
+  <p><strong>Something in the content looks wrong or out of date.</strong><br>
+  Please tell us &mdash; this is the most useful message you can send. Include the area, the
+  situation and the topic, and quote the sentence. Every substantive statement in the app is
+  linked to the official page it came from, so if that page now says something different we
+  can check it against the source and correct it in a content update. Laws change, and court
+  procedures change more often than the laws do.</p>
+
+  <p><strong>Where do the sources come from?</strong><br>
+  Court self-help guides, statutes and government agencies. They are folded under the section
+  that uses them &mdash; tap to open the citation, then tap again to read the original in an
+  in-app browser. Nothing asks you to take the app's word for it.</p>
+
+  <p><strong>How do I stop it sending anything?</strong><br>
+  Under <span class="muted">Settings &rarr; Privacy and security</span>. <em>Send crash
+  reports</em> is on by default and can be turned off. <em>Help us pick what to write next</em>
+  &mdash; anonymous counts of which topics get opened &mdash; is off until you turn it on.
+  Neither ever includes what you read, what you saved, or anything about you. Full detail is on
+  the <a href="../privacy/">privacy page</a>.</p>
+
+  <p><strong>Someone else uses this phone.</strong><br>
+  Three things help. <em>App Lock</em> asks for Face ID or Touch ID when the app reopens.
+  <em>Hide in app switcher</em>, already on, covers the screen so what you were reading is not
+  visible in multitasking. The <em>Leave</em> button closes everything you have open in the
+  app. One caveat worth knowing: none of that covers pages you opened in the in-app browser, so
+  clearing your browser history is a separate step.</p>
+
+  <p><strong>What does the app store about me?</strong><br>
+  The pages you bookmarked, and your settings. Nothing else &mdash; there is no account, no
+  questionnaire, and nowhere in the app to type a name. Deleting the app deletes all of it.</p>
+
+  <p><strong>My bookmark says the page is no longer in the app.</strong><br>
+  Content updates occasionally retire or merge a topic. The bookmark stays in your list so it
+  is not silently lost, but the page behind it is gone. Removing the bookmark clears the
+  message.</p>
+
+  <p><strong>Accessibility.</strong><br>
+  The app is built for VoiceOver, Dynamic Type at every size, and Reduce Motion, and its
+  contrast is checked against the palette rather than assumed. If something is unreadable or
+  unreachable with an accessibility setting turned on, that is a bug &mdash; please report it
+  the same way as any other.</p>
+
+  <p><strong>I need help now.</strong><br>
+  Mochi Legal is a reference and cannot help with an individual situation. The app's first
+  screen links to national safety and legal-aid resources, including domestic violence support,
+  and every topic points at legal aid and court self-help centres. Those are staffed; this app
+  is not.</p>
+
+  <h2>Contact</h2>
+  <p>Write to <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Telling us your
+  iOS version and the app version from <span class="muted">Settings &rarr; About</span> saves a
+  round trip. Please do not send documents or details of your own legal matter &mdash; we
+  cannot advise on them, and the app is built specifically so that no one here ever holds
+  anything about your situation.</p>
+
+  <p class="footer"><a href="../">Mochi Legal</a> &middot;
+  <a href="../privacy/">Privacy</a> &middot;
+  <a href="https://ptk-studio.com/">PTK Studio</a></p>
+</div>
+</body>
+</html>

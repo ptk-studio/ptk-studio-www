@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Legal &mdash; Privacy Policy</title>
+<meta name="description" content="What Mochi Legal stores and what it sends. Bookmarks stay on your device. Crash reports and anonymous page counts are both switchable, and the page counts are off by default.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #a9683a;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Mochi Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 26 August 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> Mochi Legal asks you nothing and has no account. The
+    only thing it keeps is the list of pages you bookmarked, and that list never leaves your
+    device. Two things are sent, both switchable in Settings: a crash report if the app
+    crashes, and &mdash; only if you turn it on &mdash; a count of which content page was
+    opened. Nothing you read, saved, or typed is ever transmitted, because there is nowhere in
+    the app to type anything.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi Legal is made by PTK Studio. This policy covers the Mochi Legal iOS app and this
+  page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we will answer plainly.</p>
+
+  <h2>What stays on your device</h2>
+  <p><strong>Your bookmarks, and your settings.</strong> That is the complete list. A bookmark
+  is stored as an identifier for a page that ships inside the app &mdash; a short code like
+  <span class="muted">divorce</span> or <span class="muted">ev-deadlines</span> &mdash; in the
+  app's own storage. We have no copy of it and cannot read it. Deleting the app deletes it.</p>
+  <p>There is <strong>no free text anywhere in the app</strong>: no notes, no documents, no
+  case numbers, no party names, no dates, and no search box. There is no field in which anyone
+  could enter a name, an address or an account number, because no such field exists.</p>
+
+  <h2>What is sent, and only what is sent</h2>
+  <p>Two third-party SDKs are linked, each confined to a single file, and neither is given
+  anything that identifies you.</p>
+  <ul>
+    <li><strong>Crash reports &mdash; on by default, and you can turn them off.</strong> If
+    the app crashes, Firebase Crashlytics sends the stack trace and the state of the app at the
+    moment it failed, along with your device model and iOS version so the failure can be
+    reproduced. It does not include what you were reading. Turn it off under
+    <span class="muted">Settings &rarr; Send crash reports</span>.</li>
+    <li><strong>Page counts &mdash; off until you turn them on.</strong> If you switch on
+    <span class="muted">Help us pick what to write next</span>, Statsig receives the identifier
+    of a content page when it is opened &mdash; the same short code that a bookmark uses, from
+    a list that ships inside the app. It is how we decide what to write next. It is not linked
+    to any identity: the app constructs its analytics user with no user id and no custom ids,
+    and an automated test fails the build if anyone ever adds one.</li>
+  </ul>
+  <p>Neither is used for advertising, neither is combined with data from other companies' apps
+  or websites, and there is no advertising identifier in the build &mdash; which is why you
+  will never see an App Tracking Transparency prompt.</p>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>Your name, email address, phone number, or any account &mdash; there is no sign-up.</li>
+    <li>Your contacts, photos, calendar, microphone, or camera.</li>
+    <li>Your location, precise or otherwise. The app never asks where you live, which is also
+    why it has no jurisdiction picker.</li>
+    <li>Anything you searched for. There is no search.</li>
+    <li>Which state, situation, or topic a particular person is interested in. The page counts
+    described above are totals with nobody attached to them.</li>
+  </ul>
+
+  <h2>Opening official pages</h2>
+  <p>The app links to courts, statutes and government agencies throughout. Those open in an
+  in-app Safari view, which runs in its own process: it shows you the real web address, and the
+  app has no access to that browsing, its history, its cookies or its autofill data. Where you
+  tap a telephone number &mdash; a domestic violence hotline, for instance &mdash; it goes to
+  your dialler rather than to a web page.</p>
+  <p>Those sites are not ours and have their own privacy policies. We are not told that you
+  visited one.</p>
+
+  <h2>Reading this on a shared device</h2>
+  <p>A share of the people reading about eviction or domestic violence are doing it on a phone
+  someone else can pick up, so three things are built for that. <strong>App Lock</strong> asks
+  for Face ID or Touch ID when the app reopens. <strong>Hide in app switcher</strong>, on by
+  default, covers the screen so what you were reading is not visible in multitasking. The
+  <strong>Leave</strong> button closes everything open in the app at once.</p>
+  <p>None of that reaches outside the app: pages you opened in the in-app browser are not part
+  of it, and clearing your browser history is a separate step.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children.</p>
+
+  <h2>Your rights</h2>
+  <p>Laws such as the GDPR and the CCPA give you rights to access, correct, export and delete
+  personal data a company holds about you. We hold no personal data about you &mdash; the crash
+  reports and page counts described above are not tied to a person and cannot be traced back to
+  one &mdash; so there is nothing for us to produce or erase. Everything the app stores is on
+  your own device and under your control.</p>
+
+  <h2>Changes</h2>
+  <p>If what the app collects ever changes, this page, the wording inside the app, and its App
+  Store privacy disclosure will all change before that version ships &mdash; not after.</p>
+
+  <h2>Not legal advice</h2>
+  <p>Mochi Legal provides general legal information. It is not legal advice, it does not create
+  an attorney-client relationship, and it is not a substitute for a licensed attorney or a
+  court self-help center.</p>
+
+  <p class="footer"><a href="../">Mochi Legal</a> &middot;
+  <a href="../support/">Support</a> &middot;
+  <a href="https://ptk-studio.com/">PTK Studio</a></p>
+</div>
+</body>
+</html>
