@@ -1,0 +1,237 @@
+
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .intro {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .section-label {
+    margin: 4.5rem 0 1.5rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  /* --- property grid ------------------------------------------------ */
+
+  .properties {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    /* auto-fill (not auto-fit) so a section with a single card keeps the same
+       column width as the fuller sections instead of stretching full-width */
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  }
+
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  a.card:hover,
+  a.card:focus-visible {
+    background: var(--card-hover);
+    border-color: color-mix(in srgb, var(--fg) 30%, transparent);
+  }
+
+  /* accent rule along the top edge — set per card via style="--accent: ..." */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: var(--accent, var(--fg));
+    opacity: 0.55;
+    transition: opacity 0.25s;
+  }
+
+  a.card:hover::before,
+  a.card:focus-visible::before { opacity: 1; }
+
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .domain {
+    flex: none;
+    font: 0.72rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--faint);
+    transition: color 0.25s;
+  }
+
+  a.card:hover .domain { color: var(--muted); }
+
+  .tagline {
+    margin: 0.6rem 0 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  .blurb {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: var(--faint);
+  }
+
+  .tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 1.15rem 0 0;
+    padding: 0;
+  }
+
+  .tags li {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    font: 0.66rem/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  /* for properties that aren't live yet: <li class="card soon"> */
+  .card.soon { opacity: 0.6; }
+
+  /* --- footer -------------------------------------------------------- */
+
+  footer {
+    margin-top: auto;
+    padding-top: 5rem;
+    font-size: 0.875rem;
+    color: var(--faint);
+  }
+
+  footer p { margin: 0; max-width: 34rem; }
+  footer p + p { margin-top: 1rem; }
+
+  footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-color: var(--line);
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--fg); }
+
+  .dot { padding: 0 0.5rem; opacity: 0.4; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+
+  /* --- added when the properties moved onto their own pages --- */
+  .eyebrow a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .eyebrow a:hover { color: var(--fg); }
+
+  .page-title {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.6rem, 4.4vw, 2.1rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .page-lede {
+    margin: 0.75rem 0 0;
+    color: var(--muted);
+    max-width: 34rem;
+    text-wrap: balance;
+  }
+  /* On the home page the section cards sit straight under the intro; there is
+     no section label above them to provide the gap. */
+  .properties.top { margin-top: 3rem; }
+
+  /* Sibling links at the foot of a section page — without them each page is a
+     dead end that only goes home. */
+  .elsewhere {
+    margin: 4rem 0 0;
+    font: 500 0.78rem/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.06em;
+    color: var(--faint);
+  }
+  .elsewhere a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .elsewhere a:hover { color: var(--fg); }
