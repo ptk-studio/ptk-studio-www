@@ -121,7 +121,7 @@
 
   <p class="eyebrow">Mochi Heartline</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 17 August 2026</p>
+  <p class="updated">Last updated 9 September 2026</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> Your saved messages, your settings, and your
@@ -146,21 +146,27 @@
   We have no copy of them, and we cannot read them. Deleting the app deletes them.</p>
 
   <h2>What we collect</h2>
-  <p>The app sends anonymous product-usage events to Statsig, our analytics provider, so we
-  can understand which content and features are worth making more of. Specifically:</p>
+  <p>The app sends anonymous product-usage events to Firebase Analytics, our analytics
+  provider, so we can understand which content and features are worth making more of.
+  Specifically:</p>
   <ul>
-    <li><strong>A random install identifier.</strong> When you first open the app it
-    generates a random ID (a UUID) and stores it on your device. It is not your Apple ID,
-    not your advertising identifier, and not tied to anything that identifies you. It exists
-    only so that two events from the same phone can be recognised as related.</li>
+    <li><strong>A random install identifier.</strong> Firebase gives this installation a random
+    number of its own and keeps it on your device. It is not your Apple ID, not your advertising
+    identifier, and not tied to anything that identifies you. It exists only so that two events
+    from the same phone can be recognised as related. Deleting the app discards it.</li>
     <li><strong>Product interaction events.</strong> Which screens you open, when a message
     is shown, saved, unsaved, or shared, and which experience or content preference you
     choose. Events record the message's ID and tone — not anything you wrote, because the
     app has no place to write anything.</li>
     <li><strong>Basic technical information</strong> that comes with any internet request,
-    including your IP address, device model, and OS version. Statsig uses the IP address to
-    infer a coarse region (such as a country) and does not expose your precise location to us.</li>
+    including your IP address, device model, and OS version. Firebase uses the IP address to
+    infer a coarse region (such as a country) and does not expose your precise location to us.
+    It also records whether the app was a development build or a released one, which is about
+    the build rather than about you.</li>
   </ul>
+  <p>Analytics went to Statsig until an earlier version and now go to Firebase. What is sent is
+  the same; the random install identifier is now Firebase&rsquo;s rather than one the app made
+  for itself.</p>
 
   <h2>What we never collect</h2>
   <ul>
@@ -178,10 +184,10 @@
   advertising, and there are no ads in the app.</p>
 
   <h2>Who else touches it</h2>
-  <p>One provider: <a href="https://www.statsig.com/privacy" target="_blank" rel="noopener noreferrer">Statsig</a>,
-  which processes the anonymous usage events described above on our behalf. If you send us
-  feedback through the in-app form, that form is hosted by Google Forms and we receive
-  whatever you choose to type into it.</p>
+  <p>One provider: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase</a>,
+  a Google service, which processes the anonymous usage events described above on our behalf.
+  If you send us feedback through the in-app form, that form is hosted by Google Forms and we
+  receive whatever you choose to type into it.</p>
 
   <h2>How long we keep it</h2>
   <p>Anonymous usage events are retained by our analytics provider on a rolling basis and

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mochi Legal &mdash; Privacy Policy</title>
-<meta name="description" content="What Mochi Legal stores and what it sends. Bookmarks stay on your device. Crash reports and anonymous page counts are both switchable, and the page counts are off by default.">
+<meta name="description" content="What Mochi Legal stores and what it sends. Bookmarks stay on your device. Crash reports and anonymous page counts are both switchable, and the page counts are off by default. Both go to Firebase.">
 
 <style>
   :root {
@@ -120,7 +120,7 @@
 <div class="page">
   <p class="eyebrow">Mochi Legal</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 26 August 2026</p>
+  <p class="updated">Last updated 9 September 2026</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> Mochi Legal asks you nothing and has no account. The
@@ -146,8 +146,9 @@
   could enter a name, an address or an account number, because no such field exists.</p>
 
   <h2>What is sent, and only what is sent</h2>
-  <p>Two third-party SDKs are linked, each confined to a single file, and neither is given
-  anything that identifies you.</p>
+  <p>Two Firebase SDKs are linked, each confined to a single file, and neither is given
+  anything that identifies you. Page counts went to Statsig until version 1.1 and now go to
+  Firebase Analytics; nothing else about what is sent changed with them.</p>
   <ul>
     <li><strong>Crash reports &mdash; on by default, and you can turn them off.</strong> If
     the app crashes, Firebase Crashlytics sends the stack trace and the state of the app at the
@@ -155,11 +156,14 @@
     reproduced. It does not include what you were reading. Turn it off under
     <span class="muted">Settings &rarr; Send crash reports</span>.</li>
     <li><strong>Page counts &mdash; off until you turn them on.</strong> If you switch on
-    <span class="muted">Help us pick what to write next</span>, Statsig receives the identifier
-    of a content page when it is opened &mdash; the same short code that a bookmark uses, from
-    a list that ships inside the app. It is how we decide what to write next. It is not linked
-    to any identity: the app constructs its analytics user with no user id and no custom ids,
-    and an automated test fails the build if anyone ever adds one.</li>
+    <span class="muted">Help us pick what to write next</span>, Firebase Analytics receives the
+    identifier of a content page when it is opened &mdash; the same short code that a bookmark
+    uses, from a list that ships inside the app. It is how we decide what to write next. It is
+    not linked to any identity: there is no account and the app never sends a user id or any
+    custom property, and an automated test fails if anyone ever adds one. Firebase does keep its
+    own random number for this install, so that five pages read by one person count as one
+    person rather than five; we never read it, and switching the setting off erases it along
+    with anything not yet sent.</li>
   </ul>
   <p>Neither is used for advertising, neither is combined with data from other companies' apps
   or websites, and there is no advertising identifier in the build &mdash; which is why you
@@ -206,7 +210,9 @@
 
   <h2>Changes</h2>
   <p>If what the app collects ever changes, this page, the wording inside the app, and its App
-  Store privacy disclosure will all change before that version ships &mdash; not after.</p>
+  Store privacy disclosure will all change before that version ships &mdash; not after. In
+  version 1.1 page counts moved from Statsig to Firebase Analytics, which added the random
+  install number described above.</p>
 
   <h2>Not legal advice</h2>
   <p>Mochi Legal provides general legal information. It is not legal advice, it does not create
