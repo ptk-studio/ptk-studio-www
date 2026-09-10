@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mochi Snore</title>
+<meta name="description" content="What Mochi Snore does with your data. Short version: your recordings never leave your phone.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #7b6bd6;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Snore</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 10 September 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> Snore listens while you sleep and works out what it
+    heard on the phone itself. The recordings never leave your device — there is no upload
+    path for audio in the app at all. There is no account and no sign-up. The app does report
+    anonymous usage counts, described in full below, and because there is no account they carry
+    no name and no email.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi Snore is made by PTK Studio. This policy covers the Mochi Snore iOS app and this
+  page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we'll answer plainly.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Everything about your nights:</p>
+  <ul>
+    <li><strong>The audio.</strong> Recordings are written into the app's own storage, marked
+    so they are excluded from iCloud backup, and deleted along with the night they belong to.</li>
+    <li>The snores detected in each night — when each one happened, how long it lasted and how
+    loud it was.</li>
+    <li>Your score, timeline and hour-by-hour breakdown, all of which are worked out on the
+    phone from the night's own measurements.</li>
+    <li>The factors you tag a night with, including any factor you name yourself.</li>
+    <li>Your settings — sensitivity, audio quality, calibration.</li>
+  </ul>
+  <p>We have no copy of any of it and we cannot read it. Deleting a night deletes its audio.
+  Deleting the app deletes all of it.</p>
+
+  <h2>What the app reports</h2>
+  <p>Snore uses Firebase Analytics to count how the app is used, so we can tell which parts
+  are worth improving. It reports named product events whose values are counts, durations in
+  whole minutes, and fixed options — for example that a recording was saved, roughly how many
+  snores it contained, how many minutes it ran, and which screens were opened.</p>
+  <p>Two identifiers come with that:</p>
+  <ul>
+    <li>A <strong>random identifier</strong> the app generates on first launch. It is not
+    derived from you or your device — reinstalling the app produces a new one, and two devices
+    count as two different users.</li>
+    <li>An <strong>app instance identifier</strong> that the analytics SDK maintains on its own.</li>
+  </ul>
+  <p>Because there is no account, none of this is attached to a name, an email address or a
+  person. We can see that some anonymous installation recorded a night with forty snores. We
+  cannot see whose it was.</p>
+
+  <h2>What is never reported</h2>
+  <ul>
+    <li><strong>Audio, in any form.</strong> No recording, no fragment of one, and no
+    file name. The app has no upload path for audio.</li>
+    <li><strong>Anything you type.</strong> The one free-text field in the app — a factor you
+    name yourself — is reported as the literal word "custom", never as what you wrote.</li>
+    <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
+    <li>Your contacts, photos, calendar, camera, or location.</li>
+    <li>Your advertising identifier. The app deliberately uses the build of the analytics SDK
+    that has no advertising-identifier support, so there is nothing for it to link. You will
+    never see an App Tracking Transparency prompt, because the app does not track you across
+    other companies' apps and websites.</li>
+    <li>Health data. Snore does not read from or write to Apple Health.</li>
+  </ul>
+
+  <h2>Permissions, and when they are asked for</h2>
+  <p>Snore asks for one thing:</p>
+  <ul>
+    <li><strong>The microphone</strong> — requested the first time you start a recording,
+    because listening is the entire app. iOS shows this prompt itself. You can withdraw it at
+    any time in <strong>Settings &rarr; Privacy &amp; Security &rarr; Microphone</strong>.</li>
+  </ul>
+  <p>The app also declares the background audio mode, which is what lets a recording keep
+  running with the phone locked and the screen off. It is not a permission you are asked for
+  and it grants no access to anything else.</p>
+
+  <h2>Who else touches it</h2>
+  <p>Google, as the provider of Firebase Analytics, processes the anonymous usage counts
+  described above on our behalf. Nothing else in the app talks to anyone: there is no
+  advertising network, no crash reporter, and no server of ours. No data of yours is sold, and
+  none of it is combined with data from other companies.</p>
+
+  <h2>Children</h2>
+  <p>Mochi Snore is not directed at children under 13, and we do not knowingly collect personal
+  information from them. There is no chat, no user-to-user messaging, and no public content in
+  the app.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Record without keeping audio.</strong> Turn audio saving off in Settings and the
+    app measures the night without writing a recording at all.</li>
+    <li><strong>Delete a night</strong> from the Snores list, which removes its statistics and
+    its audio together.</li>
+    <li><strong>Delete everything</strong> by deleting the app.</li>
+    <li><strong>Ask us anything</strong> at <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>.
+    Depending on where you live you may have rights to access, correct, or delete your personal
+    information, and we honour those requests regardless of where you live. In Snore's case the
+    honest answer is that the part you care about — your recordings and your nights — never
+    reached us to begin with.</li>
+  </ul>
+
+  <h2>Not a medical device</h2>
+  <p>Snore does not diagnose anything and does not detect sleep apnoea. Loud, frequent snoring
+  with pauses in breathing can be a sign of it, and that is worth raising with a doctor rather
+  than with an app. Nothing the app shows you is a medical finding, and the score is a way of
+  comparing your own nights to each other.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change what the app collects, we'll update this page and change the date at the top
+  before the change ships. Material changes will also be noted in the release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a></p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/snore/support/">Snore support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

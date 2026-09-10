@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Snore</title>
+<meta name="description" content="Mochi Snore records the night, tells you how much you snored, how loud and when — and lets you hear it. iPhone, on-device.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #7b6bd6;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Snore</p>
+  <h1>You don't know what you sound like asleep.</h1>
+  <p class="sub">Leave the phone on the nightstand and tap start. In the morning Snore tells you
+  how much you snored, how loud, and when — and lets you play any of it back. One tap before
+  bed, no account, nothing to configure.</p>
+
+  <h2>What it is</h2>
+
+  <ul class="points">
+    <li>
+      <h3>A morning you can read at a glance</h3>
+      <p>A score out of 100 so nights are comparable, how many times you snored, how long for,
+      and the loudest moment. Then the shape of the whole night, with every snore marked on the
+      timeline and an hour-by-hour breakdown of when it got worse.</p>
+    </li>
+    <li>
+      <h3>Every snore, playable</h3>
+      <p>Each one is kept as an offset into the night's recording, so you can tap any of them
+      and hear it with a second of context either side. Sorted by loudest, or in the order they
+      happened. This is the part people end up showing someone.</p>
+    </li>
+    <li>
+      <h3>Seven nights, not one</h3>
+      <p>Last night on its own tells you very little. The main screen carries the last seven,
+      so a change you make has somewhere to show up.</p>
+    </li>
+    <li>
+      <h3>Find out what actually changes it</h3>
+      <p>Tag a night in a second — late meal, a drink, on your back, blocked nose, nasal strip.
+      Once there are four nights with a factor and four without, the app puts them side by side
+      and tells you the difference in your own snoring, rather than what is supposed to help.</p>
+    </li>
+    <li>
+      <h3>Honest about the numbers</h3>
+      <p>A phone microphone is not a sound meter, so the app shows an <em>estimated</em> decibel
+      level, says so where the number appears, and gives you a calibration slider instead of
+      pretending. The score compares your nights to each other and is not a health score.</p>
+    </li>
+    <li>
+      <h3>Built for a phone on a nightstand</h3>
+      <p>Recording keeps going with the phone locked, and the screen dims itself after twenty
+      seconds. It works with no signal at all. Audio saving can be turned off entirely if you
+      only want the numbers.</p>
+    </li>
+  </ul>
+
+  <h2>What it isn't</h2>
+  <p>Snore is not a medical device. It counts and measures snoring; it does not diagnose
+  anything and it does not detect sleep apnoea. Loud, frequent snoring with pauses in breathing
+  can be a sign of it, and that is worth raising with a doctor rather than with an app. The app
+  says the same thing in its own Settings screen rather than only here.</p>
+
+  <h2>Where the recordings go</h2>
+  <p>Nowhere. Audio stays in the app, is excluded from iCloud backup, and is deleted with the
+  night it belongs to. There is no account, no sharing and no ads. The app does report anonymous
+  usage counts — how many snores a night had, how long it ran, which parts of the app were used
+  — and with no account there is nothing for them to be attached to. The
+  <a href="/apps/snore/privacy/">privacy policy</a> sets all of it out.</p>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the <a href="/apps/snore/support/">support page</a>.
+  Requires iOS 17. iPhone only.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/snore/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/snore/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

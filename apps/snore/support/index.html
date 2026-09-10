@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi Snore</title>
+<meta name="description" content="Help with Mochi Snore — recording overnight, what the numbers mean, and how to get in touch.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #7b6bd6;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Snore</p>
+  <h1>Support</h1>
+  <p class="sub">Snore records the night on your nightstand and tells you what it heard. If
+  something isn't working, or a number doesn't look right, there's a real person at the other
+  end of the email link below.</p>
+
+  <h2>Common questions</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">How do I record a night?</p>
+      <p class="a">Tap <strong>Start</strong> on the main screen, allow the microphone when iOS
+      asks, and put the phone face down on the nightstand with the screen towards the bed. It
+      keeps recording with the phone locked, and the screen dims itself after about twenty
+      seconds. In the morning, stop the recording and the whole night is waiting for you. Plug
+      the phone in — a full night of listening uses real battery.</p>
+    </li>
+    <li>
+      <p class="q">I tested it for a minute and it found nothing.</p>
+      <p class="a">That's the app working, not a fault. It reports a quiet night as a quiet
+      night. If you want to see it react, growl or hum low into the phone in bursts of a few
+      seconds. Use short bursts: anything running past about eight seconds is treated as
+      background noise and ignored, which is what stops a fan or a television being counted all
+      night. Recordings under five seconds are discarded.</p>
+    </li>
+    <li>
+      <p class="q">The decibel numbers don't match my sound meter.</p>
+      <p class="a">They won't, and the app says so where the number appears. A phone microphone
+      is not a calibrated instrument, and iOS gives apps a relative level rather than a real
+      sound pressure. Snore converts that to an estimated dB figure with an offset you can move
+      in Settings. Use the numbers to compare your own nights against each other, which is what
+      they are good for.</p>
+    </li>
+    <li>
+      <p class="q">What is the score out of 100?</p>
+      <p class="a">A way of making nights comparable at a glance. It weighs how <em>often</em>
+      you snored most heavily, then how loud it got, then how much of the night it covered. A
+      silent night scores 100. It is not a health score and it is not a measure of how well you
+      slept.</p>
+    </li>
+    <li>
+      <p class="q">Does it detect sleep apnoea?</p>
+      <p class="a">No, and it does not try to. Snore counts and measures snoring; it does not
+      look for pauses in breathing and it cannot tell you anything diagnostic. Loud, frequent
+      snoring with pauses in breathing can be a sign of apnoea, and that is worth raising with a
+      doctor rather than with an app.</p>
+    </li>
+    <li>
+      <p class="q">How much space does a night take?</p>
+      <p class="a">A recording is 16 kHz mono AAC, so a night is measured in megabytes rather
+      than hundreds of them, and the quality is adjustable in Settings. Settings also shows
+      what all your recordings currently occupy. If you only want the numbers, turn audio
+      saving off entirely and the app measures the night without keeping a recording.</p>
+    </li>
+    <li>
+      <p class="q">The recording stopped during the night.</p>
+      <p class="a">Almost always the phone ran out of battery, or something else took the
+      microphone — a phone call will. Keep it plugged in, and don't start a recording while
+      another app is using the mic. Snore keeps everything it captured up to the point it
+      stopped.</p>
+    </li>
+    <li>
+      <p class="q">What does tagging a night do?</p>
+      <p class="a">It lets the app compare like with like. Tag the nights where something was
+      different — a drink, a late meal, a blocked nose, a nasal strip — and once there are at
+      least four nights with a factor and four without, <strong>What changes things</strong> in
+      the Snores tab shows how your tagged nights actually compared. It is your own nights side
+      by side, not a finding: plenty of other things change between nights.</p>
+    </li>
+    <li>
+      <p class="q">Can I get my recordings off the phone?</p>
+      <p class="a">Not currently. Audio stays inside the app, and there is no export or sharing.
+      That is a deliberate choice about what a recording of someone asleep is, but if it's
+      stopping you doing something reasonable, tell us — it's the kind of thing we'd reconsider.</p>
+    </li>
+    <li>
+      <p class="q">Do I need a signal, or an account?</p>
+      <p class="a">Neither. There is no sign-up, and everything the app does works with the
+      phone in airplane mode.</p>
+    </li>
+  </ul>
+
+  <h2>Still stuck, or want to suggest something</h2>
+
+  <div class="contact">
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> — tell us your
+    iPhone model and iOS version if something is broken, and what the app did versus what you
+    expected. If a night came out wrong, the date of it helps.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Short version: your recordings never leave your phone, and the app has no upload path for
+  audio at all. It does report anonymous usage counts, and there is no account for them to be
+  attached to. The full detail is in the <a href="/apps/snore/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/snore/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
