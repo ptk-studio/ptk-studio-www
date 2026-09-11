@@ -121,7 +121,7 @@
 
   <p class="eyebrow">Mochi Snore</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 10 September 2026</p>
+  <p class="updated">Last updated 11 September 2026</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> Snore listens while you sleep and works out what it
@@ -163,6 +163,12 @@
     count as two different users.</li>
     <li>An <strong>app instance identifier</strong> that the analytics SDK maintains on its own.</li>
   </ul>
+  <p>The app also sends <strong>crash reports</strong> through Firebase Crashlytics: a stack
+  trace, the iOS version and the device model when something goes wrong, plus the same random
+  identifier so we can tell one phone crashing ten times from ten phones crashing once. Nothing
+  about a night is attached to a crash &mdash; no recording, no note, no factor you named, and
+  never a file name.</p>
+
   <p>Because there is no account, none of this is attached to a name, an email address or a
   person. We can see that some anonymous installation recorded a night with forty snores. We
   cannot see whose it was.</p>
@@ -194,10 +200,17 @@
   and it grants no access to anything else.</p>
 
   <h2>Who else touches it</h2>
-  <p>Google, as the provider of Firebase Analytics, processes the anonymous usage counts
-  described above on our behalf. Nothing else in the app talks to anyone: there is no
-  advertising network, no crash reporter, and no server of ours. No data of yours is sold, and
-  none of it is combined with data from other companies.</p>
+  <p>Google, as the provider of Firebase Analytics and Crashlytics, processes the anonymous
+  usage counts and crash reports described above on our behalf. There is no advertising network
+  and no server of ours. No data of yours is sold, and none of it is combined with data from
+  other companies.</p>
+
+  <p>One other service is reachable from the app, and only if you go and tap it.
+  <strong>Settings &rarr; Feedback</strong> opens our public feedback board, hosted by
+  Featurebase, as an ordinary web page inside the app. The app hands it nothing: no recordings,
+  no statistics, no identifier. From there you are simply using a website, and what you choose to
+  write on it is public. Posting requires an email address, which is a Featurebase sign-in rather
+  than a Snore account &mdash; we never have one of those to give you.</p>
 
   <h2>Children</h2>
   <p>Mochi Snore is not directed at children under 13, and we do not knowingly collect personal
