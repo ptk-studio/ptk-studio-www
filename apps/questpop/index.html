@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi QuestPop</title>
+<meta name="description" content="Mochi QuestPop lets you build an escape room or a scavenger hunt for someone you know, and hide something real at the end of it.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #e8553f;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi QuestPop</p>
+  <h1>Make someone work for it.</h1>
+  <p class="sub">QuestPop is for building an escape room, a scavenger hunt, or a week-long
+  countdown for one particular person &mdash; and putting something real at the end of it. Play
+  the ones that come with it without an account, or spend twenty minutes making one that only
+  the person you made it for could finish.</p>
+
+  <h2>What it is</h2>
+
+  <ul class="points">
+    <li>
+      <h3>A quest is stages, and a stage is puzzles</h3>
+      <p>Solve what a stage asks and the next one opens. That is the whole model, and it covers
+      a lighthouse you have to escape, four stops on a walk, and a message that arrives one day
+      at a time.</p>
+    </li>
+    <li>
+      <h3>Eight kinds of puzzle, none of which need explaining</h3>
+      <p>Combination and word locks you spin, multiple choice, a riddle you type an answer to, a
+      direction sequence, items to drag into order, things hidden in a picture, and a panel you
+      rub clean. Every one of them has a way through that does not need a steady hand or good
+      eyesight.</p>
+    </li>
+    <li>
+      <h3>Built for one person in particular</h3>
+      <p>Ask something only they would know. A quest can be public, shared by a code, or private
+      to the people you name. The answers live on the server, not in the app, so nobody gets
+      ahead by poking at the thing on their phone.</p>
+    </li>
+    <li>
+      <h3>One stage a day, for a week</h3>
+      <p>A countdown quest releases a short stage each morning, hands over a piece of the ending
+      each time, and holds the last reveal until you let it go. The reminder it sends says only
+      that a stage is ready &mdash; a lock screen is visible to whoever is standing there.</p>
+    </li>
+    <li>
+      <h3>The ending can be somewhere else entirely</h3>
+      <p>Finish with nothing, with confetti, with a note you wrote, with a photo, or with
+      directions to something waiting in the real world. The best ones end with the phone
+      telling you to go and look behind something.</p>
+    </li>
+    <li>
+      <h3>It grows into the screen it is on</h3>
+      <p>On a phone it is one column and large controls. Given room &mdash; sideways, on an iPad
+      &mdash; the clue notebook, what you have collected and the puzzle sit side by side. Change
+      the shape mid-puzzle and the digits you had already dialled are still there.</p>
+    </li>
+  </ul>
+
+  <h2>What it isn&rsquo;t</h2>
+  <p>QuestPop does not sell gift cards, run competitions, or hand out prizes. If a quest ends in
+  a gift card it is because the person who made it already owned the code and attached it for
+  one named recipient; the app encrypts it, shows it to nobody else, and says plainly that it
+  cannot check whether the card still has a balance on it. There are no sweepstakes, no random
+  rewards and nothing that pays out to whoever gets there first.</p>
+
+  <h2>Where your quests live</h2>
+  <p>A published quest is stored on our server so the people you shared it with can play it. The
+  answers are kept apart from the quest itself, where no app can read them, and checking an
+  answer happens on the server rather than on the phone. A gift-card code is encrypted before it
+  is stored and is only ever decrypted for the person it was addressed to, after they have
+  finished. The <a href="/apps/questpop/privacy/">privacy policy</a> sets all of it out, including
+  the short list of things the app measures and the much longer list of things it never sends.</p>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the
+  <a href="/apps/questpop/support/">support page</a>. Requires iOS 17. iPhone and iPad.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/questpop/support/">Support</a>
+    &nbsp;&middot;&nbsp; <a href="/apps/questpop/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

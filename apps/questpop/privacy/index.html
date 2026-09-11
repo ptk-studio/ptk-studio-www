@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Mochi QuestPop</title>
+<meta name="description" content="What Mochi QuestPop does with your data. Short version: puzzle answers and gift-card codes are kept where no app can read them, and nothing you type is ever measured.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .updated {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .lede {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lede::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #e8553f;
+    opacity: 0.55;
+  }
+
+  .lede p { margin: 0; }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 0.5rem; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  .muted { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi QuestPop</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 11 September 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> You can play without registering &mdash; the app makes
+    you a guest account by itself and never asks for your email. Quests you publish are stored on
+    our server so the people you shared them with can play them. Puzzle answers and gift-card
+    codes are kept in a place no app can read, including yours. The app measures which kinds of
+    puzzle get played and whether quests get finished; it never sends anything you typed, any
+    answer, any share code, or your location.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Mochi QuestPop is made by PTK Studio. This policy covers the Mochi QuestPop iOS app and this
+  page. If anything here is unclear, write to
+  <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we&rsquo;ll answer plainly.</p>
+
+  <h2>Your account</h2>
+  <p>The first time you open the app it signs you in as an anonymous guest. That account is a
+  random identifier and nothing else &mdash; no email, no name, no phone number &mdash; and it
+  exists so the quest you are halfway through is still there tomorrow. You are never asked to
+  register in order to play.</p>
+  <p>Making a quest is different, because a quest is something other people will open, so it
+  needs an account that survives losing the phone. That is <strong>Sign in with Google</strong>,
+  and it is the only sign-in we offer. When you use it, your guest account is upgraded in place
+  so the progress you already made carries over. We receive your Google account identifier and
+  the display name on it. We store the display name, because it appears on quests you publish.
+  <strong>We do not store your email address</strong> &mdash; it stays with the sign-in provider
+  and is never written into our database, attached to analytics, or used to contact you.</p>
+
+  <h2>What is stored on our server</h2>
+  <p>QuestPop is a thing you share with other people, so most of it has to live somewhere both of
+  you can reach:</p>
+  <ul>
+    <li><strong>Quests you make</strong> &mdash; the title, description, cover image, stages,
+    story text, clues, puzzles, and how the ending works.</li>
+    <li><strong>Images and audio you upload</strong> for a cover, a stage, a clue or an ending,
+    held in Cloud Storage under a random file name.</li>
+    <li><strong>Your progress</strong> in each quest &mdash; which puzzles you have solved, how
+    many attempts each took, which hints you opened, when you started and finished, and your
+    score.</li>
+    <li><strong>Who is in a private quest</strong>, so the right people can open it.</li>
+    <li><strong>Your profile</strong> &mdash; display name, notification preferences, and the
+    creators you have blocked.</li>
+  </ul>
+  <p>Your progress is readable by you and by nobody else. The person who made the quest cannot
+  see how many attempts you took, and neither can anyone else playing it.</p>
+
+  <h2>The two things kept where no app can read them</h2>
+  <p>Some data is deliberately put out of reach of every copy of the app, including yours:</p>
+  <ul>
+    <li><strong>Puzzle answers.</strong> When a quest is published its answers are moved into a
+    separate store that no app is permitted to read. Submitting an answer sends what you entered
+    to our server, which compares it and replies only with right or wrong. This is why you cannot
+    get ahead by inspecting the app, and it is also why we are able to say that an answer is
+    never sent anywhere else.</li>
+    <li><strong>Gift-card codes.</strong> If a quest ends in a gift card, the code is encrypted
+    with a managed key before it is stored and is never written into the quest itself. It is
+    decrypted only for the one person it was addressed to, only after they have finished the
+    quest, and only once the creator has released it. It is never put into a link, a
+    notification, an analytics event or a crash report, and the creator cannot read it back
+    afterwards &mdash; the app shows them only the last four characters.</li>
+  </ul>
+  <p>QuestPop does not sell, issue or buy gift cards. A creator can only attach a code they
+  already own, and only to a private quest with a named recipient.</p>
+
+  <h2>What the app reports</h2>
+  <p>QuestPop uses Firebase Analytics to count how the app is used, so we can tell which parts
+  are worth improving. Every event is one of a fixed list, and every value is a fixed option, a
+  count, or an identifier that means nothing outside our database &mdash; for example that a
+  combination lock was attempted for the third time, that a quest with seven stages was started,
+  or that a wide-screen layout was used. Durations are reported as a band rather than a number,
+  so a play session cannot be used to pick one person out.</p>
+  <p>The app also sends <strong>crash reports</strong> through Firebase Crashlytics: a stack
+  trace, the iOS version and the device model, plus a note of which operation was in flight &mdash;
+  &ldquo;submitting an answer&rdquo;, not what the answer was.</p>
+  <p><strong>Firebase App Check</strong> uses Apple&rsquo;s App Attest to confirm that requests
+  are coming from a real copy of our app rather than a script. It tells us nothing about you.</p>
+  <p>You can turn usage reporting off in <strong>Settings &rarr; Privacy &rarr; Share anonymous
+  usage data</strong>.</p>
+
+  <h2>What is never reported</h2>
+  <ul>
+    <li><strong>Anything you typed.</strong> Quest titles, stories, clues, riddles, messages you
+    wrote for someone, names you gave things. The app is built so that a measurement has nowhere
+    to put free text even by mistake.</li>
+    <li><strong>Puzzle answers</strong>, yours or the creator&rsquo;s.</li>
+    <li><strong>Join codes.</strong> We record that a code was used, never which one.</li>
+    <li><strong>Anything about a gift card</strong> &mdash; the code, the PIN, the barcode, the
+    brand, the value, or who it was for.</li>
+    <li><strong>Your location</strong>, precise or otherwise. The app does not use location
+    services at all. A quest can tell you to walk somewhere; the app does not watch you do it.</li>
+    <li>Your email address, phone number or contacts.</li>
+    <li>Your photo library. Choosing a cover image uses the system picker, which hands the app
+    the one picture you chose and nothing else &mdash; which is why the app never asks for photo
+    access.</li>
+    <li>Your camera, calendar, or health data.</li>
+    <li>Your advertising identifier. There are no ads and no advertising network, you will never
+    see an App Tracking Transparency prompt, and nothing about you is combined with data from
+    other companies.</li>
+  </ul>
+
+  <h2>Permissions, and when they are asked for</h2>
+  <p>QuestPop asks for one thing, and only when it becomes relevant:</p>
+  <ul>
+    <li><strong>Notifications</strong> &mdash; requested the first time you start a quest that
+    releases a stage on a schedule, never at first launch. If you decline, that quest still works;
+    you just have to remember to come back. You can change it in
+    <strong>Settings &rarr; Notifications</strong>.</li>
+  </ul>
+  <p>Notifications are scheduled on your phone rather than sent from our server, and they are
+  deliberately vague &mdash; &ldquo;Your next QuestPop stage is ready&rdquo; &mdash; because a
+  lock screen is visible to whoever is standing next to it and a countdown quest is usually meant
+  to be a surprise.</p>
+
+  <h2>Quests other people made</h2>
+  <p>Anyone can publish a quest, which means you may open text and pictures we did not write. A
+  basic word check runs before a quest is published, and we are clear in the app that this is a
+  first pass rather than moderation. Every quest can be reported from its own page, and you can
+  block a creator, which hides everything of theirs from you.</p>
+  <p>A report records which quest, the reason you picked, anything you added, and who sent it.
+  The creator cannot read reports and cannot find out who reported them.</p>
+
+  <h2>Who else touches it</h2>
+  <p>Google, as the provider of Firebase, stores the data described above on our behalf and
+  processes the anonymous usage counts and crash reports. Google also provides Sign in with
+  Google. There is no advertising network, no analytics broker, and no other server of ours. No
+  data of yours is sold.</p>
+
+  <h2>Children</h2>
+  <p>Mochi QuestPop is not directed at children under 13, and we do not knowingly collect
+  personal information from them. There is no chat and no user-to-user messaging; the only text
+  another person can put in front of you is the quest they wrote, and any quest can be reported
+  or its creator blocked.</p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Play without an account.</strong> Public quests never ask you to register.</li>
+    <li><strong>Turn usage reporting off</strong> in Settings.</li>
+    <li><strong>Take a quest down</strong> that you published, at any time.</li>
+    <li><strong>Delete your account</strong> in <strong>Settings &rarr; Delete account</strong>.
+    This removes your profile, your progress everywhere, your membership of other people&rsquo;s
+    quests, and every quest you made &mdash; including for the people who were playing them. Any
+    report you sent stays, with your identity stripped from it, so that moderation still works.
+    It cannot be undone.</li>
+    <li><strong>Ask us anything</strong> at
+    <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Depending on where you live
+    you may have rights to access, correct, or delete your personal information, and we honour
+    those requests regardless of where you live.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change what the app collects, we&rsquo;ll update this page and change the date at the
+  top before the change ships. Material changes will also be noted in the release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a></p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp;
+    <a href="/apps/questpop/">Mochi QuestPop</a> &nbsp;&middot;&nbsp;
+    <a href="/apps/questpop/support/">Support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

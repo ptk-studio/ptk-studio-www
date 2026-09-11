@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &mdash; Mochi QuestPop</title>
+<meta name="description" content="Help with Mochi QuestPop — joining a quest, making one, scheduled stages, gift-card endings, and how to get in touch.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #e8553f;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi QuestPop</p>
+  <h1>Support</h1>
+  <p class="sub">The questions that come up most. If yours isn&rsquo;t here, the email address is
+  at the bottom and a person reads it.</p>
+
+  <h2>Playing</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">Someone sent me a code. Where does it go?</p>
+      <p class="a">Open <strong>Explore</strong> and tap the <strong>#</strong> button at the top
+      right. Codes are six characters and the dash is only there to make them easier to read
+      aloud &mdash; you can type it or leave it out. If the quest is private rather than just
+      unlisted, you will need to sign in with the account it was shared with.</p>
+    </li>
+    <li>
+      <p class="q">Do I need an account to play?</p>
+      <p class="a">No. Public quests open straight away and your progress is kept without you
+      registering for anything. You only need to sign in to make a quest, to share one, or to
+      open a private quest that was addressed to you specifically.</p>
+    </li>
+    <li>
+      <p class="q">I signed in and my progress disappeared.</p>
+      <p class="a">That happens when the Google account you chose already had a QuestPop account
+      of its own. Rather than merge two people&rsquo;s data, the app signs you into the existing
+      one and tells you so. If you meant to keep the guest progress, sign out, and it will be
+      waiting under the guest account you were using before.</p>
+    </li>
+    <li>
+      <p class="q">The next stage is locked and I finished the last one.</p>
+      <p class="a">Either it opens on a date &mdash; the screen tells you which &mdash; or the
+      person who made it releases stages by hand and has not released that one yet. Countdown
+      quests are the common case: one short stage a morning, and the app will remind you if you
+      let it.</p>
+    </li>
+    <li>
+      <p class="q">I am sure my answer is right.</p>
+      <p class="a">Riddle answers forgive capitals, spacing, accents and punctuation, so that is
+      rarely it. Word locks have to be exactly the right number of letters. Hidden-object puzzles
+      need every object found, not just one. If you still think the quest is wrong, report it from
+      the menu on the quest page &mdash; that reaches us, not the creator.</p>
+    </li>
+    <li>
+      <p class="q">I can&rsquo;t aim at the picture, or I&rsquo;m using VoiceOver.</p>
+      <p class="a">Every puzzle has a way through that does not need a steady hand. Hidden-object
+      puzzles have <strong>Find by name instead</strong>, which lists what you are looking for.
+      Scratch panels have <strong>Reveal all</strong>. Lock wheels have buttons as well as drag,
+      and work with VoiceOver&rsquo;s adjustable gesture. Ordering puzzles have move-up and
+      move-down. None of these count as cheating and none of them cost you anything.</p>
+    </li>
+  </ul>
+
+  <h2>Making a quest</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">How long does it take to make one?</p>
+      <p class="a">Twenty minutes for something good, less if you start from a template. Pick a
+      template in <strong>Create</strong>, change the words, and set the answers. The app saves
+      as you go and nothing is visible to anyone until you publish.</p>
+    </li>
+    <li>
+      <p class="q">It won&rsquo;t let me publish.</p>
+      <p class="a">The publish step lists what is missing and each item takes you to the screen
+      that fixes it. The usual culprits are a stage with no puzzles, a scheduled quest with a
+      stage that has no date, and a word-lock answer that is not the length of the wheels.</p>
+    </li>
+    <li>
+      <p class="q">Can I see it the way they will?</p>
+      <p class="a">Yes &mdash; <strong>Preview</strong> plays your draft, and you can switch it
+      between phone, wide and large-text presentations. Worth doing before you send it, especially
+      the large-text one.</p>
+    </li>
+    <li>
+      <p class="q">Who can play what I made?</p>
+      <p class="a">Your choice. <strong>Public</strong> is discoverable by anyone.
+      <strong>Unlisted</strong> needs the code or the link. <strong>Private</strong> is only the
+      people you name, and is the right answer for anything personal.</p>
+    </li>
+    <li>
+      <p class="q">Can I put a gift card at the end?</p>
+      <p class="a">Only one you already own, only on a private quest, and only addressed to one
+      person. QuestPop does not sell gift cards and cannot check whether a card still has a
+      balance &mdash; verify it yourself before you attach it. The code is encrypted when you add
+      it, which means we cannot show it back to you afterwards; you will only see the last four
+      characters.</p>
+    </li>
+    <li>
+      <p class="q">I published something by mistake.</p>
+      <p class="a">Open the quest and take it down from the menu. It stops being playable
+      straight away.</p>
+    </li>
+  </ul>
+
+  <h2>Notifications and privacy</h2>
+
+  <ul class="qa">
+    <li>
+      <p class="q">Why is the notification so vague?</p>
+      <p class="a">Deliberately. &ldquo;Your next QuestPop stage is ready&rdquo; gives nothing
+      away to whoever is looking at the lock screen, which matters when the quest is a surprise.
+      You can turn quest titles on in Settings if you would rather see them.</p>
+    </li>
+    <li>
+      <p class="q">Does it know where I am?</p>
+      <p class="a">No. The app does not use location services. A quest can tell you to walk
+      somewhere and ask what you found when you get there, but the app is not watching.</p>
+    </li>
+    <li>
+      <p class="q">How do I delete everything?</p>
+      <p class="a"><strong>Settings &rarr; Delete account</strong>. It removes your profile, your
+      progress, and every quest you made &mdash; including for anyone part way through one of
+      them. It cannot be undone. The <a href="/apps/questpop/privacy/">privacy policy</a> says
+      exactly what goes and what stays.</p>
+    </li>
+  </ul>
+
+  <h2>Still stuck</h2>
+
+  <div class="contact">
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> &mdash; tell us your
+    iPhone model and iOS version if something is broken, and what the app did versus what you
+    expected. If a particular quest is the problem, its title and which stage you were on is
+    enough for us to find it.</p>
+  </div>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp;
+    <a href="/apps/questpop/">Mochi QuestPop</a> &nbsp;&middot;&nbsp;
+    <a href="/apps/questpop/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
