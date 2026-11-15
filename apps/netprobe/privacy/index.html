@@ -121,13 +121,16 @@
 
   <p class="eyebrow">Mochi NetProbe</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 26 August 2026</p>
+  <p class="updated">Last updated 14 November 2026</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> NetProbe looks at the network you are already
     joined to. Everything it finds — the devices, the names you give them, your notes and
-    your scan history — stays on your phone. There is no account, no analytics, and no
-    server of ours. We do not know what is on your network, and we have no way to find out.</p>
+    your scan history — stays on your phone. There is no account and no server of ours. We do
+    not know what is on your network, and we have no way to find out. Since version 1.1 the app
+    sends anonymous usage counts and crash reports through Google's Firebase, so we can see
+    which tools get used and fix what breaks; this page says exactly what those are, and none
+    of it is about your network.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -147,18 +150,30 @@
   <p>We have no copy of any of it and we cannot read it. Deleting the app deletes it.</p>
 
   <h2>What we collect</h2>
-  <p>Nothing. There is no analytics provider, no crash reporter, no advertising SDK, and no
-  server of ours for the app to talk to.</p>
+  <p>Anonymous usage counts and crash reports, through two Google services, and nothing that
+  identifies you or describes your network:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — that a scan started, finished or was cancelled,
+    with the number of devices found rounded into a range (none, 1, up to 5, up to 10, up to 25, up to
+    50, more); that a tool was opened (which one: ping, traceroute, port scan, DNS, WHOIS,
+    Wake-on-LAN, Bonjour, interfaces, known networks); that a device's detail screen was opened
+    or a scan exported — never which device. Along with these, Firebase records the device
+    model, iOS version, app version and the country your connection appears to come from, and
+    assigns a random identifier to the installation, not to you.</li>
+    <li><strong>Firebase Crashlytics</strong> — if the app crashes, a report of where in the
+    code it failed, with the device model, iOS version and app version, so we can fix it.</li>
+  </ul>
   <p>This is worth stating plainly rather than burying, because a network scanner is exactly
-  the kind of app where it would matter: we do not know how many devices are on your network,
-  what they are, what you named them, when you last scanned, or whether you have opened the
-  app at all.</p>
+  the kind of app where it would matter: <strong>none of it contains an address, a hardware
+  address, a device name, a network name, a port, a banner, a note, or anything you
+  type.</strong> We still do not know what is on your network or what you named anything.</p>
 
   <h2>What we never collect</h2>
   <ul>
     <li>Your name, email address, phone number, or any account — there is no sign-up.</li>
     <li>Your contacts, photos, calendar, microphone, or camera.</li>
-    <li>Your location, precise or otherwise.</li>
+    <li>Your precise location. The app never asks for it. (Firebase Analytics works out the
+    country from your connection's address, as noted above.)</li>
     <li>Your advertising identifier. The app does not ask to track you across other
     companies' apps and websites, so you will never see an App Tracking Transparency prompt.</li>
   </ul>
@@ -183,9 +198,10 @@
   <p>Nothing about a scan leaves your network. Scan results are never uploaded, because
   there is nowhere for them to go.</p>
 
-  <h2>The two things that reach the internet</h2>
-  <p>Two features in the Tools tab deliberately go beyond your own network. Neither runs
-  during a scan, and neither runs unless you tap it:</p>
+  <h2>What reaches the internet</h2>
+  <p>The anonymous usage counts and crash reports described above go to Google's Firebase.
+  Beyond that, two features in the Tools tab deliberately go beyond your own network. Neither
+  runs during a scan, and neither runs unless you tap it:</p>
   <ul>
     <li><strong>WHOIS lookup.</strong> The domain or address you type is sent to the public
     WHOIS system — first to IANA, then to whichever registry IANA points at — which is how
@@ -200,9 +216,12 @@
   <p>Neither result is stored anywhere but on your phone, and neither is sent to us.</p>
 
   <h2>Who else touches it</h2>
-  <p>Nobody. There are no third-party services inside the app, and no data of yours is shared
-  with, sold to, or processed by anyone. The two lookups above talk to public internet
-  infrastructure at your request, and that is the extent of it.</p>
+  <p><strong>Google</strong> (Firebase Analytics and Crashlytics) receives the usage counts and
+  crash reports described above, as our service provider, under its own terms. No data of
+  yours is sold or shared with anyone else. The two lookups above talk to public internet
+  infrastructure at your request. <strong>Apple</strong> knows you downloaded the app, as it
+  does for every app, and passes us download counts and, from people who chose to share them,
+  crash reports, none of which name anybody.</p>
 
   <h2>Children</h2>
   <p>Mochi NetProbe is not directed at children under 13, and we do not knowingly collect
@@ -217,8 +236,9 @@
     <li><strong>Ask us anything</strong> at <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>.
     Depending on where you live you may have rights to access, correct, or delete your
     personal information. We honour those requests regardless of where you live — though in
-    NetProbe's case the honest answer is that we hold nothing of yours to give back or
-    erase, because it never left your phone.</li>
+    NetProbe's case the honest answer is that we hold nothing that identifies you: your scan
+    results never leave your phone, and the usage counts and crash reports aren't linked to
+    you, so we can't look one person's up.</li>
   </ul>
 
   <h2>Changes to this policy</h2>
