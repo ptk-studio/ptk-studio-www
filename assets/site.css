@@ -235,3 +235,15 @@
     transition: color 0.2s;
   }
   .elsewhere a:hover { color: var(--fg); }
+
+  /* --- books: cover image on a card --------------------------------- */
+  .card.book .cover {
+    display: block;
+    width: 8rem;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    margin: 0 0 1rem;
+    border-radius: 0.25rem;
+    background: var(--line);
+  }
