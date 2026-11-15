@@ -7,6 +7,13 @@
 <meta name="description" content="Books — HoneyStorm puzzle books, coloring books and notebooks on Amazon.">
 <link rel="canonical" href="https://ptk-studio.com/books/">
 <link rel="stylesheet" href="../assets/site.css">
+<style>
+  .book-jumps { margin: 1.25rem 0 0; font-size: .95rem; }
+  .book-jumps .dot { opacity: .5; margin: 0 .35rem; }
+  .book-group { margin-top: 2.5rem; scroll-margin-top: 1rem; }
+  .group-title { font-size: 1.25rem; margin: 0 0 .25rem; }
+  .book-group .properties { margin-top: 1rem; }
+</style>
 </head>
 <body>
 <div class="page">
@@ -15,7 +22,14 @@
     <h1 class="page-title">Books</h1>
     <p class="page-lede">Puzzle books, coloring books and notebooks from HoneyStorm, printed on demand and sold on Amazon. <a href="https://www.amazon.com/stores/Honey-Storm/author/B0C3ZMDXNC" target="_blank" rel="noopener">All HoneyStorm books on Amazon &#8594;</a></p>
   </header>
-  <ul class="properties">
+  <nav class="book-jumps" aria-label="Book categories">
+    <a href="#puzzles">Puzzles &amp; coloring</a> <span class="dot">&middot;</span>
+    <a href="#journals">Journals &amp; notebooks</a>
+  </nav>
+
+  <section class="book-group" id="puzzles" aria-labelledby="puzzles-h">
+    <h2 class="group-title" id="puzzles-h">Puzzles &amp; coloring</h2>
+    <ul class="properties">
     <li>
       <a class="card book" style="--accent: #e8a317" href="https://www.amazon.com/dp/B0HRRF1TXY" target="_blank" rel="noopener">
         <img class="cover" src="https://m.media-amazon.com/images/P/B0HRRF1TXY.01._SCLZZZZZZZ_.jpg" alt="Cover of Word Wiz Jumbo Large-Print Word Search" loading="lazy" width="160" height="240">
@@ -52,6 +66,12 @@
         <ul class="tags"><li>Book</li><li>Coloring</li></ul>
       </a>
     </li>
+    </ul>
+  </section>
+
+  <section class="book-group" id="journals" aria-labelledby="journals-h">
+    <h2 class="group-title" id="journals-h">Journals &amp; notebooks</h2>
+    <ul class="properties">
     <li>
       <a class="card book" style="--accent: #e8a317" href="https://www.amazon.com/dp/B0C2TBB7GZ" target="_blank" rel="noopener">
         <img class="cover" src="https://m.media-amazon.com/images/P/B0C2TBB7GZ.01._SCLZZZZZZZ_.jpg" alt="Cover of Sweet Candy Journal" loading="lazy" width="160" height="240">
@@ -124,7 +144,8 @@
         <ul class="tags"><li>Book</li><li>Notebook</li></ul>
       </a>
     </li>
-  </ul>
+    </ul>
+  </section>
 </div>
 <script src="/assets/ptk-analytics.js" defer></script>
 </body>
