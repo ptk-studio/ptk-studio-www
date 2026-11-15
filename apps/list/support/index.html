@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi List</title>
+<meta name="description" content="Help with Mochi List: lists, modes, export and import.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a7edf;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .updated { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--faint); }
+  .lede {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .lede p { margin: 0; }
+  ul:not(.qa) { margin: 0 0 1rem; padding-left: 1.15rem; color: var(--muted); }
+  ul:not(.qa) li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi List</p>
+  <h1>Support</h1>
+  <p class="sub">Mochi List turns one list into many ways to use it: a checklist, a spin wheel, a
+  randomizer, flash cards, or a plain list. If something isn't behaving, start here, and if the
+  answer isn't below, write to us.</p>
+
+  <h2>Common questions</h2>
+  <ul class="qa">
+    <li>
+      <p class="q">Where are my lists stored?</p>
+      <p class="a">On your device only. There's no account and no cloud sync, so deleting the
+      app deletes your lists. To keep a copy, open the list's <strong>Advanced Actions</strong>
+      and choose <strong>Export List</strong>; it saves a .zip package.</p>
+    </li>
+    <li>
+      <p class="q">How do I move lists to a new phone?</p>
+      <p class="a">Export each list (<strong>Export List</strong>), send the .zip to the new
+      device (AirDrop, Messages, Files), then use <strong>Import</strong> in Mochi List and pick
+      the file.</p>
+    </li>
+    <li>
+      <p class="q">Does the app need the internet?</p>
+      <p class="a">No. Everything works offline. When online, the app sends anonymous usage and
+      crash data (see the <a href="/apps/list/privacy/">privacy policy</a>).</p>
+    </li>
+    <li>
+      <p class="q">How do I reset a checklist?</p>
+      <p class="a">Open the list in Checklist mode, tap <strong>Reset All</strong>, then confirm
+      <strong>Reset</strong>.</p>
+    </li>
+    <li>
+      <p class="q">Which version am I running?</p>
+      <p class="a">iPhone Settings → General → iPhone Storage → Mochi List shows it.</p>
+    </li>
+  </ul>
+
+  <div class="contact">
+    <h2>Still stuck</h2>
+    <p>Write to <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>. Please include
+    your iPhone or iPad model, your iOS version and the app version.</p>
+  </div>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;·&nbsp; <a href="/apps/list/support/">Support</a>
+    &nbsp;·&nbsp; <a href="/apps/list/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
