@@ -142,7 +142,7 @@
 
   <p class="eyebrow">Mochi FramePop</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 24 August 2026</p>
+  <p class="updated">Last updated 16 November 2026 (FramePop 1.1)</p>
 
   <div class="lede">
     <p><strong>The short version.</strong> Your photos and the videos you make never leave
@@ -176,8 +176,9 @@
   Settings.</p>
 
   <h2>What we collect</h2>
-  <p>The app sends anonymous product-usage events to Statsig, our analytics provider, so we
-  can understand which templates and features are worth making more of. Specifically:</p>
+  <p>The app sends anonymous product-usage events to two analytics providers, Statsig and
+  Google Analytics for Firebase, so we can understand which templates and features are worth
+  making more of. Specifically:</p>
   <ul>
     <li><strong>A random install identifier.</strong> When you first open the app it generates
     a random ID (a UUID) and stores it on your device. It is not your Apple ID, not your
@@ -186,11 +187,18 @@
     <li><strong>Product interaction events.</strong> Which template you opened and which pack
     it came from, whether an export finished or failed and why, whether a pack was added, and
     whether a template was liked or a video shared. Events record template and pack names,
-    video formats, counts and durations — facts about the app.</li>
+    video formats, counts and durations — facts about the app. The same events go to both
+    providers.</li>
+    <li><strong>App events from Google Analytics for Firebase.</strong> Firebase also records
+    a few events of its own: the first time the app is opened, when a session starts, how long
+    the app is in use, which screen is showing, and app updates. It identifies the install with
+    its own random app-instance identifier, separate from the one above. FramePop uses the
+    Firebase Analytics version <strong>without advertising-identifier support</strong>: it never
+    reads your advertising identifier, and we don't link it to any advertising product.</li>
     <li><strong>Basic technical information</strong> that comes with any internet request,
-    including your IP address, device model, and OS version. Statsig uses the IP address to
-    infer a coarse region such as a country, and does not expose your precise location to
-    us.</li>
+    including your IP address, device model, OS version, app version and language. Statsig and
+    Google use the IP address to infer a coarse region such as a country or city, and do not
+    expose your precise location to us.</li>
     <li><strong>Crash reports.</strong> If the app stops unexpectedly, it sends a report to
     Firebase Crashlytics, our crash-reporting provider. A report contains the stack trace —
     the list of steps in our own code that led to the stop — along with your device model, OS
@@ -218,12 +226,13 @@
   <h2>Who else touches it</h2>
   <p><strong>Statsig</strong> receives the usage events described above and nothing else. They
   process it on our behalf as our analytics provider.</p>
-  <p><strong>Firebase Crashlytics</strong>, a Google service, receives crash reports and
-  nothing else. It never receives the usage events, and the two are not joined up: we do not
-  give Crashlytics the install identifier Statsig uses. We use only its crash-reporting
-  product — not Google Analytics, and not any advertising or measurement service Google
-  offers. There is no advertising partner, and no server of ours for anything to be sent
-  to.</p>
+  <p><strong>Google</strong> receives two things through Firebase: the usage events described
+  above (Google Analytics for Firebase), and crash reports (Firebase Crashlytics). We do not
+  give Google the install identifier Statsig uses. We use no advertising service Google offers,
+  and FramePop doesn't link the advertising identifier. There is no advertising partner, and no
+  server of ours for anything to be sent to.</p>
+  <p>Statsig is on its way out: a later version of FramePop uses Firebase only, and this page
+  will drop Statsig when that version is released.</p>
   <p>Two things are worth naming because they are yours, not ours. When you tap
   <strong>Share</strong>, iOS hands the video to whichever app or person you pick, and their
   policy applies from that point. And if you turn on <strong>Save to Photos
@@ -232,13 +241,15 @@
 
   <h2>How long we keep it</h2>
   <p>Usage events are kept by Statsig on our behalf for as long as they are useful for
-  understanding how the app is used. Crash reports are kept by Firebase Crashlytics on our
+  understanding how the app is used. Google Analytics keeps usage events for the retention
+  period set on our Analytics property, at most 14 months. Crash reports are kept by Firebase Crashlytics on our
   behalf, which retains them for up to 90 days. What is on your device stays until you remove
   it.</p>
 
   <h2>Your choices and rights</h2>
   <p>The usage data is anonymous and holds nothing that identifies you, so there is no account
-  for us to look you up in. If you would like the events from your install removed, write to
+  for us to look you up in. The app has no switch to turn usage data off. If you would like
+  the events from your install removed, write to
   <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we will do it.</p>
   <p>You can revoke FramePop's access to your photos at any time in
   <strong>iOS Settings → Privacy &amp; Security → Photos</strong>; the app still works, and
