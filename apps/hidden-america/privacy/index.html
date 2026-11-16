@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hidden America &mdash; Privacy Policy</title>
-<meta name="description" content="Hidden America collects nothing. No accounts, no analytics, no crash reporting, no tracking. This is what the app sends, and to whom.">
+<meta name="description" content="Hidden America has no account and no tracking. It sends only anonymous usage counts and crash reports, which you can turn off. This is what the app sends, and to whom.">
 
 <style>
   :root {
@@ -120,15 +120,17 @@
 <div class="page">
   <p class="eyebrow">Hidden America</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 26 August 2026</p>
+  <p class="updated">Last updated 16 November 2026</p>
 
   <div class="lede">
-    <p><strong>The short version.</strong> We collect nothing. There is no account, no
-    sign-up, no analytics, no crash reporting and no advertising identifier &mdash; the app
-    sends us nothing at all, and we could not identify you if we wanted to. The National
-    Register ships inside the app, so browsing it is entirely offline. Your passport, your
-    notes and your API key stay on your phone. Three outside services see a request when you
-    use the features that need them, and each is named below.</p>
+    <p><strong>The short version.</strong> There is no account, no sign-up and no advertising
+    identifier. The app sends us two kinds of anonymous data, and you can turn both off in
+    Settings &rarr; Privacy: <strong>usage counts</strong> (which of the app's three tabs is
+    opened) and <strong>crash reports</strong> (a stack trace, the app version, the device model
+    and OS version). Neither contains anything you searched for, any place you looked at, your
+    location, anything the guide wrote, or your API key. The National Register ships inside the
+    app, so browsing it is entirely offline. Your passport, your notes and your API key stay on
+    your phone. The outside services the app talks to are each named below.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -137,12 +139,15 @@
   <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> and we will answer plainly.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> The app contains no analytics, no crash reporting and no
-  advertising or attribution SDK of any kind. It never contacts a server of ours &mdash; we do
-  not run one. We do not know how many places you have looked at, which state you browsed, or
-  whether you opened the app at all.</p>
-  <p>Because we hold nothing about you, there is nothing for us to sell, share with data
-  brokers, or use to advertise to you. There are no ads in the app.</p>
+  <p>Through Google Firebase (Analytics and Crashlytics): <strong>screen views</strong> of the
+  Explore, Passport and Settings tabs, and <strong>crash reports</strong>. They are tied to a
+  random app-instance ID, not to you. They are used only to see how much the app is used and
+  to fix crashes &mdash; never for advertising, never sold, and never combined with other
+  data. Turn off &ldquo;Anonymous usage analytics&rdquo; in Settings and the app sends
+  neither.</p>
+  <p>We do not know which places you looked at, which state you browsed, or what the guide
+  told you. There are no ads in the app, and nothing for us to sell or share with data
+  brokers.</p>
 
   <h2>What stays on your device</h2>
   <ul>
@@ -160,8 +165,11 @@
   app deletes them.</p>
 
   <h2>What the app sends, and to whom</h2>
-  <p>Three services, each for a specific job, and none of them ours:</p>
+  <p>Four services, each for a specific job:</p>
   <ul>
+    <li><strong>Google Firebase</strong> (Analytics and Crashlytics) receives the anonymous
+    usage counts and crash reports described above, unless you turn off &ldquo;Anonymous usage
+    analytics&rdquo; in Settings.</li>
     <li><strong>The National Park Service</strong> (<code>mapservices.nps.gov</code>) receives
     the rectangle of the map you are looking at, so the app can pick up listings added since
     the snapshot was cut. If you are looking at your own surroundings, that rectangle
