@@ -45,7 +45,18 @@ def build_index(ps):
         body = f'  <ul class="post-list">\n{items}\n  </ul>'
     else:
         body = '  <p class="post-empty">The first posts are on their way.</p>'
+    noindex = '<meta name="robots" content="noindex">\n'
+    t = t.replace(noindex, "")
+    if not ps:  # an empty blog stays out of search until the first post
+        t = t.replace('<link rel="canonical"', noindex + '<link rel="canonical"', 1)
     new = re.sub(r"(<!-- POSTS:START[^>]*-->\n).*?(\n  <!-- POSTS:END -->)", lambda m: m.group(1) + body + m.group(2), t, flags=re.S)
+    open(f, "w", encoding="utf-8").write(new)
+
+def build_home_link(ps):
+    f = os.path.join(ROOT, "index.html")
+    t = open(f, encoding="utf-8").read()
+    link = '<a href="/blog/">Blog</a>\n      <span class="dot">·</span>\n      ' if ps else ""
+    new = re.sub(r"(<!-- BLOGLINK:START[^>]*-->).*?(<!-- BLOGLINK:END -->)", lambda m: m.group(1) + link + m.group(2), t, flags=re.S)
     open(f, "w", encoding="utf-8").write(new)
 
 def rfc822(d):
@@ -76,5 +87,5 @@ def build_sitemap(ps):
 
 if __name__ == "__main__":
     ps = posts()
-    build_index(ps); build_feed(ps); build_sitemap(ps)
+    build_index(ps); build_home_link(ps); build_feed(ps); build_sitemap(ps)
     print(f"{len(ps)} posts; blog/index.html, blog/feed.xml and sitemap.xml rebuilt")
