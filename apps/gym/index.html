@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Gym</title>
+<meta name="description" content="Mochi Gym is an iOS training log that shows your training on a muscle map. No account; your log stays on your phone.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a7edf;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover { background: var(--card-hover); color: var(--fg); }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .points li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .points h3 { margin: 0 0 0.6rem; font-size: 1rem; }
+  .points p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Gym</p>
+  <h1>A training log that shows you your body.</h1>
+  <p class="sub">Mochi Gym puts your training on an anatomy figure. Every muscle you&rsquo;ve worked
+  lights up, and the ones you&rsquo;ve been skipping stay cool. Tap a muscle to see its exercises,
+  start one and log the set. The map updates as you go.</p>
+
+  <p class="sub"><strong>Coming soon</strong> to the App Store for iPhone and iPad.</p>
+
+  <h2>What it is</h2>
+
+  <ul class="points">
+    <li>
+      <h3>The muscle map</h3>
+      <p>Each muscle shows as trained (in the last 2 days), recovering or neglected, worked out
+      from the sets you&rsquo;ve logged over a window you choose: 7, 14 or 30 days.</p>
+    </li>
+    <li>
+      <h3>A nudge, not a nag</h3>
+      <p>Muscles you haven&rsquo;t trained in a while are marked. Tap one to see what works it.</p>
+    </li>
+    <li>
+      <h3>Log it your way</h3>
+      <p>Reps and weight, or time for holds and planks. Kilograms or pounds. A rest timer that
+      can start itself after each set.</p>
+    </li>
+    <li>
+      <h3>About 60 exercises</h3>
+      <p>Grouped by muscle, each with how to do it.</p>
+    </li>
+    <li>
+      <h3>Routines and Quick Workout</h3>
+      <p>Build routines or just start a quick workout, with a history of every session.</p>
+    </li>
+    <li>
+      <h3>Try it before you train</h3>
+      <p>&ldquo;Show a sample week&rdquo; fills the map with clearly labelled demo data, which is
+      never mixed into your own log.</p>
+    </li>
+    <li>
+      <h3>Made for everyone</h3>
+      <p>VoiceOver reads each muscle&rsquo;s state, and the app works at the largest text sizes.</p>
+    </li>
+    <li>
+      <h3>No account, no subscription</h3>
+      <p>Your log lives on your phone.</p>
+    </li>
+  </ul>
+
+  <h2>Help</h2>
+  <p>Answers to the common questions are on the <a href="/apps/gym/support/">support page</a>,
+  and what the app does with your data is in the <a href="/apps/gym/privacy/">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/gym/support/">Support</a>
+    &nbsp;&middot;&nbsp; <a href="/apps/gym/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+<script src="/assets/ptk-analytics.js" defer></script>
+</body>
+</html>

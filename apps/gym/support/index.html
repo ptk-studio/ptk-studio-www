@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Mochi Gym</title>
+<meta name="description" content="Help with Mochi Gym: the muscle map, logging sets and holds, units, the rest timer and deleting your data.">
+
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16150f;
+    --muted: #16150f99;
+    --faint: #16150f5c;
+    --line: #16150f1f;
+    --card: #16150f08;
+    --card-hover: #16150f12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0d;
+      --fg: #ecebe6;
+      --muted: #ecebe6a6;
+      --faint: #ecebe666;
+      --line: #ecebe626;
+      --card: #ecebe60a;
+      --card-hover: #ecebe614;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font: 500 0.78rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 1.75rem 0 0;
+    font-size: clamp(1.35rem, 3.6vw, 1.85rem);
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  .sub { margin: 1rem 0 0; color: var(--muted); }
+
+  h2 {
+    margin: 3.25rem 0 1rem;
+    font: 500 0.7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  p { margin: 0 0 1rem; }
+
+  .qa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .qa li {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+
+  .q { margin: 0 0 0.6rem; font-weight: 600; }
+  .a { margin: 0; color: var(--muted); }
+
+  .contact {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: #4a7edf;
+    opacity: 0.55;
+  }
+
+  a { color: inherit; text-underline-offset: 0.2em; }
+  a:hover { color: var(--muted); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--faint);
+  }
+
+  .updated { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--faint); }
+  .lede {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--card);
+  }
+  .lede p { margin: 0; }
+  ul:not(.qa) { margin: 0 0 1rem; padding-left: 1.15rem; color: var(--muted); }
+  ul:not(.qa) li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Mochi Gym</p>
+  <h1>Support</h1>
+  <p class="sub">Mochi Gym is a training log built around a map of your muscles. If something
+  isn&rsquo;t working, start here. If your answer isn&rsquo;t below, write to us.</p>
+
+  <h2>Common questions</h2>
+  <ul class="qa">
+    <li>
+      <p class="q">Does it work without a connection?</p>
+      <p class="a">Yes, all of it. The exercises, your log and the muscle map are all on your phone, so it works in a basement gym with no signal.</p>
+    </li>
+    <li>
+      <p class="q">How does the map decide what&rsquo;s trained, recovering or neglected?</p>
+      <p class="a">From the last time you logged a set that worked that muscle: within 2 days is trained; after that it&rsquo;s recovering until the end of the window you pick under the map (7, 14 or 30 days; 7 at first), and neglected from then on, or if never trained. With the 7-day window, 3 to 6 days is recovering and a week or more is neglected. The set and volume figures count the same window. A set counts in full for the exercise&rsquo;s main muscle and as half a set for the muscles that assist.</p>
+    </li>
+    <li>
+      <p class="q">What is the sample week?</p>
+      <p class="a">Demo data that shows what a filled-in map looks like. It&rsquo;s labelled as a sample, it isn&rsquo;t saved, and it never mixes with your own workouts. Switch it off and your own log is back.</p>
+    </li>
+    <li>
+      <p class="q">Kilograms or pounds?</p>
+      <p class="a"><strong>Settings &rarr; Units &rarr; Weight</strong>.</p>
+    </li>
+    <li>
+      <p class="q">Can I log planks and other holds?</p>
+      <p class="a">Yes. Holds are logged by time instead of reps and weight.</p>
+    </li>
+    <li>
+      <p class="q">Can the rest timer start by itself?</p>
+      <p class="a">Yes: <strong>Settings &rarr; &ldquo;Auto-start after a set&rdquo;</strong>.</p>
+    </li>
+    <li>
+      <p class="q">How do I delete my data?</p>
+      <p class="a"><strong>Settings &rarr; Your Data &rarr; Clear All Workout History</strong>. Deleting the app removes the rest. There&rsquo;s no account to close.</p>
+    </li>
+    <li>
+      <p class="q">Is this medical or coaching advice?</p>
+      <p class="a">No. Mochi Gym is a log. Check with a professional before starting a new training programme.</p>
+    </li>
+    <li>
+      <p class="q">What do you collect about me?</p>
+      <p class="a">Nothing that identifies you, and never your sets: no reps, times or weights. We count app opens and actions to see which parts get used. The <a href="/apps/gym/privacy/">privacy policy</a> names both services and exactly what each one receives. To stop even that, turn off <strong>Settings &rarr; Privacy &rarr; Share anonymous usage</strong>.</p>
+    </li>
+  </ul>
+
+  <div class="contact">
+    <h2>Still stuck</h2>
+    <p>Email <a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a>, or use
+    <strong>Send feedback</strong> in the app. Tell us your iPhone or iPad model, your iOS version
+    and the screen you were on. Those details help most.</p>
+  </div>
+
+  <footer>
+    <p><a href="/">PTK Studio</a> &nbsp;&middot;&nbsp; <a href="/apps/gym/support/">Support</a>
+    &nbsp;&middot;&nbsp; <a href="/apps/gym/privacy/">Privacy policy</a></p>
+  </footer>
+
+</div>
+<script src="/assets/ptk-analytics.js" defer></script>
+</body>
+</html>
