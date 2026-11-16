@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} &middot; PTK Studio Blog</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta property="article:published_time" content="{{DATE}}">
+<meta name="ptk:reading-minutes" content="{{MINUTES}}">
+<link rel="canonical" href="https://ptk-studio.com/blog/{{SLUG}}/">
+<link rel="alternate" type="application/rss+xml" title="PTK Studio Blog" href="/blog/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:url" content="https://ptk-studio.com/blog/{{SLUG}}/">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/blog.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"{{TITLE}}","description":"{{DESCRIPTION}}","datePublished":"{{DATE}}","url":"https://ptk-studio.com/blog/{{SLUG}}/","author":{"@type":"Organization","name":"PTK Studio","url":"https://ptk-studio.com/"},"publisher":{"@type":"Organization","name":"PTK Studio"}}
+</script>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="eyebrow"><a href="../../">PTK Studio</a> &middot; <a href="../">Blog</a></p>
+    <h1 class="page-title">{{TITLE}}</h1>
+    <p class="post-meta"><time datetime="{{DATE}}">{{DATE_HUMAN}}</time> &middot; {{MINUTES}} min read</p>
+  </header>
+
+  <article class="post-body">
+{{BODY_HTML}}
+  </article>
+
+  <aside class="post-callout">
+    <h2>{{PRODUCT_NAME}}</h2>
+    <p>{{PRODUCT_LINE}}</p>
+    <p><a href="{{PRODUCT_URL}}?utm_source=ptk-studio&amp;utm_medium=blog&amp;utm_campaign={{PROJECT}}-2027">{{PRODUCT_CTA}} &#8594;</a></p>
+    <p class="disclosure">Disclosure: {{PRODUCT_NAME}} is made by PTK Studio.</p>
+  </aside>
+
+  <footer>
+    <p><a href="../">&#8592; All posts</a> <span class="dot">&middot;</span> <a href="/blog/feed.xml">RSS</a></p>
+    <p><a href="mailto:hello@ptk-studio.com">hello@ptk-studio.com</a> <span class="dot">&middot;</span> <a href="/privacy/">Privacy</a> &middot; <a href="#" id="ptk-consent">Usage stats</a></p>
+  </footer>
+</div>
+<script src="/assets/ptk-analytics.js" defer></script>
+</body>
+</html>
