@@ -18,7 +18,6 @@
   Keep both in step, and keep the visible link: a redirect that does not fire
   should still land somewhere useful.
 -->
-<meta http-equiv="refresh" content="0; url=https://docs.google.com/forms/d/e/1FAIpQLSfjM72E18gZiPkE-LWBq88X91bPv1Mzlk40cqsKYJ7pT0lxCA/viewform">
 <link rel="canonical" href="https://ptk-studio.com/apps/worldly/feedback/">
 
 <style>
@@ -160,7 +159,8 @@
   <p class="sub">Found a fact that's out of date, a country that's missing, or something that
   simply doesn't work? We'd like to hear it.</p>
 
-  <p><a class="cta" href="mailto:hello@ptk-studio.com?subject=Worldly%20feedback">Email us &#8599;</a></p>
+  <p><a class="cta" href="mailto:hello@ptk-studio.com?subject=Worldly%20feedback" data-open-feedback>Send feedback &#8599;</a></p>
+  <p class="sub">Opens the Feedback form on this page (also the <strong>Feedback</strong> button at the bottom right). No account needed; leave an email only if you want a reply.</p>
 
   <h2>What helps</h2>
   <p>For a correction, tell us the country and what's wrong &mdash; a source helps but isn't
@@ -177,5 +177,14 @@
 </div>
 <script src="/assets/ptk-analytics.js" defer></script>
 <script src="https://api.88eggs.com/feedback/widget.js?v=2" data-key="fk_AQATHVVwLl3BAOYwccx_nO1h" async></script>
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[data-open-feedback]');
+  if (!a) return;
+  var h = document.querySelector('[data-eggs-feedback]');
+  var b = h && h.shadowRoot && h.shadowRoot.querySelector('.b');
+  if (b) { e.preventDefault(); b.click(); }
+});
+</script>
 </body>
 </html>
