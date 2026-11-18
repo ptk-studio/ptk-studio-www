@@ -40,15 +40,17 @@ Type: **Nunito** (SIL OFL 1.1). Colours: navy `#1F2A44`, cream `#FFF6E0`, blush 
   - puzzles and trivia;
   - weekend trips.
 - **20, community:** "what's your small joy today?", polls.
-- **10, ours:** "fresh off the line": a new puzzle book, a nurse tee, a guide, a Short, always "(ours)".
+- **0% ours for now (R98, the Owner 2026-11-18):** *"let's not reference to any of our products, just build up the trust and personality first"*. **No products, no store, affiliate or `/go/` links** until the Owner says yes to products, which the manager proposes with data in a weekly digest. The 10% share is used by value and community posts meanwhile.
+- **The opening period is a market test of verticals** (R98, R87): each post is tagged with one vertical (**puzzle, tech tips, jokes/humor, love messages, travel, history/trivia, AI tips, planning/printables**, plus others where the site has a line), each appearing about equally, as a statement and as a question/poll, at varied times. Every post is logged in `published/<YYYY-MM>.csv` with its vertical (impressions, engagement rate, replies, follows, profile visits at 24 h and 7 d, R92). The manager ranks interest per vertical weekly; the next weeks' mix shifts toward the winners, with a floor for every vertical.
+- **Love messages** stay warm and general (no real people, nothing explicit). **Jokes** are clean and kind (no politics, groups or tragedies).
 - **Out:** news cycles, politics, finance and crypto, medical or legal tips.
 
-**Bio (160):** `Mochi Factory makes small joys: cozy apps, puzzle books, guides & stories 🍡 Tips, puzzles & what's fresh off the line. By PTK Studio.`
+**Bio (160), R98:** `Mochi Factory: a little factory of small joys 🍡 Handy tips, puzzles, trips and a smile or two. By PTK Studio.`
 
 **5 sample posts**
 1. Small joy of the day: a song you'd forgotten coming up on shuffle. What was yours this week?
 2. Word-search trick: hunt for the rarest letter first (Q, Z, X or a double letter). Your eyes catch it faster than an E.
-3. Fresh off the line: a large-print word search with big, clear letters, for the puzzle lover in your life. (ours) `[link]`
+3. (Not used during R98's no-products period.) Fresh off the line: a large-print word search with big, clear letters, for the puzzle lover in your life. (ours)
 4. Printing a calendar that comes out the wrong size? Print at "Actual size", not "Fit to page". Fixes it almost every time.
 5. Poll: the coziest way to spend a rainy Sunday? Puzzle · Movie · Long walk · Nap
 
