@@ -11,7 +11,7 @@ from datetime import date
 from email.utils import format_datetime
 from datetime import datetime, timezone
 
-SITE = "https://ptk-studio.com"
+SITE = "https://mochi-factory.com"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def meta(text, pattern):
@@ -26,7 +26,7 @@ def posts():
         if not os.path.isfile(f):
             continue
         t = open(f, encoding="utf-8").read()
-        title = re.sub(r"\s*·\s*PTK Studio Blog$", "", meta(t, r"<title>(.*?)</title>"))
+        title = re.sub(r"\s*·\s*Mochi Factory Blog$", "", meta(t, r"<title>(.*?)</title>"))
         d = meta(t, r'property="article:published_time" content="([^"]+)"')
         desc = meta(t, r'name="description" content="([^"]*)"')
         if not (title and d):
@@ -68,8 +68,8 @@ def build_feed(ps):
         f"<guid>{SITE}/blog/{p['slug']}/</guid><pubDate>{rfc822(p['date'])}</pubDate>"
         f"<description>{html.escape(p['desc'])}</description></item>" for p in ps)
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n'
-           f'  <title>PTK Studio Blog</title>\n  <link>{SITE}/blog/</link>\n'
-           '  <description>Short, practical posts from PTK Studio.</description>\n  <language>en-us</language>'
+           f'  <title>Mochi Factory Blog</title>\n  <link>{SITE}/blog/</link>\n'
+           '  <description>Short, practical posts from Mochi Factory.</description>\n  <language>en-us</language>'
            f'{items}\n</channel>\n</rss>\n')
     open(os.path.join(ROOT, "blog", "feed.xml"), "w", encoding="utf-8").write(xml)
 
