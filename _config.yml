@@ -1,0 +1,12 @@
+# GitHub Pages builds this repo with Jekyll and publishes everything not
+# excluded here. Internal docs live in the repo but must never be served.
+# Add any new internal file or folder to this list in the same PR that adds it.
+# (ptk-studio#129: AGENTS, DAILY-CHECKS, PERSONA, SCHEDULE and
+# mochi-agent/RELEASE-CHECKS were being served as .html pages.)
+exclude:
+  - mochi-agent/
+  - AGENTS.md
+  - DAILY-CHECKS.md
+  - PERSONA.md
+  - SCHEDULE.md
+  - README.md
