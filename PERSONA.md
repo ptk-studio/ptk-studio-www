@@ -62,7 +62,7 @@ Type: **Nunito** (SIL OFL 1.1). Colours: navy `#1F2A44`, cream `#FFF6E0`, blush 
   - length ≤ 240;
   - **links rare** (Q284: posted by hand in the browser, so there's no API cost, but links still feel salesy);
   - **links to our own pages and stores** via `/go/<id>?src=x` (counted);
-  - **an Amazon Associates link is never routed through `/go/`** (a "Redirecting Link" disqualifies the sale, hub `ptk-studio/ptk-studio`: `mochi-factory/docs/marketing/amazon-associates.md`). It goes **direct** to `https://www.amazon.com/…?tag=<tracking-id>`, with **Amazon's sentence above it in the same post**. Simplest on X: link to our own product page (via `/go/`), where the tagged Amazon link and the disclosure live;
+  - **an Amazon Associates link is never routed through `/go/`** (a "Redirecting Link" disqualifies the sale, hub `ptk-studio/ptk-studio`: `mochi-factory/docs/marketing/amazon-associates.md`). It goes **direct** to `https://www.amazon.com/…?tag=<tracking-id>`, with **Amazon's sentence above it in the same post, word for word: "As an Amazon Associate I earn from qualifying purchases."**. Simplest on X: link to our own product page (via `/go/`), where the tagged Amazon link and the disclosure live;
   - 0–1 hashtag, 0–1 emoji;
   - alt text on images; AI images labelled where X asks.
 - **Cadence:** **1 post a day at most**, at varied times. **Every post OK'd by the Owner** for now (#219). Posted by hand from the Mac mini's signed-in Chrome (Q284), at most 1 a day; stop at any warning or captcha.
