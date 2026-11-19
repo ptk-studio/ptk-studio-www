@@ -10,3 +10,12 @@
 .post-list h2 { font-size: 1.2rem; margin: 0 0 .25rem; }
 .post-list p { margin: .25rem 0 0; }
 .post-empty { margin-top: 2rem; color: var(--muted, #666); }
+.post-tags { margin: .35rem 0 0; font-size: .9rem; color: var(--muted, #666); }
+.tag-list { margin: 1.25rem 0 0; max-width: 42rem; font-size: .95rem; }
+.post-body figure { margin: 1.5rem 0; }
+.post-body figcaption { color: var(--muted, #666); font-size: .9rem; margin-top: .4rem; }
+.post-body audio { display: block; width: 100%; max-width: 28rem; margin: .25rem 0 1rem; }
+.post-callout .channels { margin: .5rem 0; }
+.post-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .95rem; display: block; overflow-x: auto; }
+.post-table th, .post-table td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid rgba(0,0,0,.12); vertical-align: top; }
+.post-table th { font-weight: 600; }
