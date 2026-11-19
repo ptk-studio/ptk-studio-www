@@ -7,6 +7,7 @@
 <meta name="description" content="{{DESCRIPTION}}">
 <meta property="article:published_time" content="{{DATE}}">
 <meta name="ptk:reading-minutes" content="{{MINUTES}}">
+{{TAG_META}}
 <link rel="canonical" href="https://mochi-factory.com/blog/{{SLUG}}/">
 <link rel="alternate" type="application/rss+xml" title="Mochi Factory Blog" href="/blog/feed.xml">
 <meta property="og:type" content="article">
@@ -25,6 +26,7 @@
     <p class="eyebrow"><a href="../../">Mochi Factory</a> &middot; <a href="../">Blog</a></p>
     <h1 class="page-title">{{TITLE}}</h1>
     <p class="post-meta"><time datetime="{{DATE}}">{{DATE_HUMAN}}</time> &middot; {{MINUTES}} min read</p>
+    <p class="post-tags"><!-- TAGS:START --><!-- TAGS:END --></p>
   </header>
 
   <article class="post-body">
