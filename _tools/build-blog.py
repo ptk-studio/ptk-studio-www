@@ -15,7 +15,9 @@ from datetime import datetime, timezone
 
 SITE = "https://mochi-factory.com"
 # The tag set stays small and consistent (the Owner, ptk-studio#259): a post may only use these, in this order.
-TAGS = ["AI models", "blind tests", "AI images", "AI voice", "YouTube", "cost", "printables", "how-to"]
+# Tags are written lowercase with "-" for spaces, exactly as in their URL (the Owner, 2026-11-23); no "youtube" or "cost" tags.
+TAGS = ["ai-models", "blind-tests", "ai-images", "ai-voice", "printables", "how-to"]
+assert all(re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", t) for t in TAGS), "tags must be lowercase, with - for spaces"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def slugify(tag):
@@ -174,7 +176,9 @@ def build_sitemap(ps, used=None):
     files += [f"blog/tag/{slugify(t)}/index.html" for t in (used or {})]
     def indexable(f):
         p = os.path.join(ROOT, f)
-        return not (os.path.isfile(p) and re.search(r'name="robots" content="[^"]*noindex', open(p, encoding="utf-8").read()))
+        if not os.path.isfile(p):  # tracked by git but deleted (e.g. a removed tag page)
+            return False
+        return not (re.search(r'name="robots" content="[^"]*noindex', open(p, encoding="utf-8").read()))
     urls = sorted({f"{SITE}/" + f[: -len("index.html")] for f in files if f.endswith("index.html") and indexable(f)})
     dates = {f"{SITE}/blog/{p['slug']}/": p["date"] for p in ps}
     body = "".join(f"\n  <url><loc>{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if u in dates else "") + "</url>" for u in urls)
